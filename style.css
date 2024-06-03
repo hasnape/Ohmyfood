@@ -1,0 +1,60 @@
+/**** generale ****/
+
+:root {
+    --font-logo: 'Shrikhand', cursive;
+    --font-text: 'Roboto', sans-serif;
+
+    --color-primary: #9356DC;
+    --color-secondary: #FF79DA;
+    --color-tertiary: #99E2D0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 42px 0 26px;
+}
+
+img {
+    width: 47%;
+}
+
+svg {
+    font-size: 30px;
+}
+
+.btn {
+    color: var(--Grey, #353535);
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 29px;
+    gap: 29px;
+    background: var(--Grey-2, #EAEAEA);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    border: none;
+}
+
+.title-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-main h1 {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 50px;
+    margin: 47px 0px 10px 66p;
+}
+
+.title-main h2 {
+    font-family: Roboto;
+    font-weight: 200;
+    font-size: 50px;
+}
