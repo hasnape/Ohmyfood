@@ -51,19 +51,19 @@ img {
 }
 
 .local svg {
-    width: 5%;
-    height: 18%;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: 12rem;
-    align-content: center;
+        width: 5%;
+            height: 18%;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 12rem;
+            align-content: center;
 }
 
-.ville {
-    font-size: 33px;
-    font-weight: 500;
-    margin: 0 0 0 80px;
+.ville{
+      font-size: 33px;
+      font-weight: 500;
+margin: 0 0 0 80px;
 }
 
 /* Localisation */
@@ -97,10 +97,10 @@ img {
 
 .title-main h1 {
     font-size: 45px;
-    font-weight: 700;
-    margin: 70px 0 0 0;
-    padding: 0 110px 0 110px;
-}
+        font-weight: 700;
+        margin: 70px 0 0 0;
+        padding: 0 110px 0 110px;
+    }
 
 .title-main h2 {
     color: var(--Grey, #353535);
@@ -120,7 +120,7 @@ img {
     text-align: center;
     border: none;
     font-weight: 500;
-    margin: 10px 0 0 113px;
+    margin: 10px 0 0 100px;
     background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
 }
 
@@ -173,7 +173,6 @@ img {
     background-color: #f6f6f6;
     padding-top: 20px;
     margin-top: 120px;
-    height: 2400px;
 }
 
 .restaurants_fonctionnement h2 {
@@ -271,39 +270,36 @@ a {
 }
 
 /* Footer */
-
+footer {
+    background-color: #f1f1f1;
+    /* Ajustez selon votre besoin */
+    padding: 20px;
+    text-align: center;
+}
 
 .footer {
-    flex: 1;
-    background-color: #353535;
-}
-
-.column {
-        margin: 0 0 0 10px;
-            color: #f6f6f6;
-            display: flex;
-            flex-direction: column;
-            width: auto;
-            height: 320px;
-}
-
-.column p {
-
-    font-size: 27px;
     display: flex;
-    flex-direction: row;
-    margin: 10px 0 0 30px;
-    align-items: baseline;
+    justify-content: space-around;
 }
 
-.footer__svg {
-    width: 50px;
-    height: 22px;
-    margin: 0 0px 0px -13px;
+.footer .column {
+    flex: 1;
 }
 
-.footer__logo {
-    width: 178px;
-    height: 52px;
-    margin: 35px 0 20px 34px;
+.footer .column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer .column ul li {
+    margin-bottom: 10px;
+}
+
+svg {
+    width: 20%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 39rem;
 }
