@@ -93,25 +93,26 @@ img {
 .title-main h2 {
     text-align: center;
     font-family: var(--font-text);
+    color: var(--Grey, #353535);
 }
 
 .title-main h1 {
     font-size: 45px;
     font-weight: 700;
-    margin: 70px 0 0 0;
-    padding: 0 110px 0 110px;
+    margin: 70px 0px 0 0;
+    padding: 0px 105px 0 107px;
 }
 
 .title-main h2 {
-    color: var(--Grey, #353535);
-    font-size: 36px;
+
+    font-size: 34px;
     font-weight: 300;
-    margin-top: 27px;
+    margin: 27px 0px 55px 33px;
 }
 
 /* Bouton principal */
 .button button {
-    width: 448px;
+    width: 440px;
     height: 105px;
     border-radius: 3.5625rem;
     box-shadow: 0px 11px 15px 0px rgba(0, 0, 0, 0.25);
@@ -120,13 +121,13 @@ img {
     text-align: center;
     border: none;
     font-weight: 500;
-    margin: 10px 0 0 113px;
+    margin: 10px 0 0 124px;
     background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
 }
 
 /* Fonctionnement */
 .fonctionnement h2 {
-    font-size: 43px;
+    font-size: 47px;
     margin: 95px 0 0 33px;
 }
 
@@ -279,17 +280,17 @@ a {
 }
 
 .column {
-        margin: 0 0 0 10px;
-            color: #f6f6f6;
-            display: flex;
-            flex-direction: column;
-            width: auto;
-            height: 320px;
+    margin: 0 0 0 10px;
+    color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 320px;
 }
 
 .column p {
 
-    font-size: 27px;
+    font-size: 29px;
     display: flex;
     flex-direction: row;
     margin: 10px 0 0 30px;
