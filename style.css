@@ -175,6 +175,7 @@ img {
     padding-top: 20px;
     margin-top: 120px;
     height: 2400px;
+    width: fit-content;
 }
 
 .restaurants_fonctionnement h2 {
@@ -194,12 +195,11 @@ img {
 .StyleCard {
     border-radius: 2.25rem;
     background: #FFF;
-    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 622px;
-    height: 493px;
+    height: 465px;
     margin: 40px 0 0 25px;
 }
 
@@ -216,8 +216,40 @@ img {
     width: 100%;
     height: 344px;
     border-radius: 1.25rem 1.25rem 0 0;
-    object-fit: cover;
+    object-fit: inherit;
     object-position: center;
+    background-position: 50% 50%;
+}
+
+.special-card-image1 {
+    width: 100%;
+    height: 344px;
+    border-radius: 1.25rem 1.25rem 0 0;
+    background-image: url("assets/Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-size: 104%;
+    background-position: center 100%;
+    background-repeat: no-repeat
+}
+
+
+.special-card-image2 {
+    width: 100%;
+    height: 344px;
+    border-radius: 1.25rem 1.25rem 0 0;
+    background-image: url("assets/Images et textes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    background-size: 105%;
+    background-position: center 61%;
+    background-repeat: no-repeat
+}
+
+.special-card-image3 {
+    width: 100%;
+    height: 343px;
+    border-radius: 1.25rem 1.25rem 0 0;
+    background-image: url("assets/Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-size: 101%;
+    background-position: center 104%;
+    background-repeat: no-repeat;
 }
 
 /* Styles pour le contenu de la carte */
@@ -248,22 +280,23 @@ a {
 
 .nouveau {
     background: var(--Primary, #99E2D0);
-    width: 11rem;
-    height: 4rem;
+    width: 28%;
+    height: 6.5%;
     border-radius: 8px;
     display: flex;
     align-items: center;
     color: #008766;
     position: absolute;
-    left: 27.5rem;
-    font-size: 31px;
+    left: 66%;
+    font-size: 27px;
     font-weight: 500;
     justify-content: center;
-    margin-top: 26px;
+    align-items: center;
+    margin: 22px 0 0 0;
 }
 
 .like {
-    width: 6%;
+    width: 7%;
     height: 8rem;
     display: flex;
     align-items: center;
