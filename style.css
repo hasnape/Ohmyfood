@@ -11,8 +11,11 @@
     --color-tertiary: #99E2D0;
     --grey: #2d2424;
     --grey-2: #efefef;
-    --button-gradient: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+    --button-gradient: linear-gradient(13deg, #FF79DA -12.44%, #9356DC 115.93%);
+
+    --carte-resto: height: 200px, width: 100%;
 }
+
 
 /* Général */
 html,
@@ -58,10 +61,10 @@ main {
     align-items: center;
     gap: 20px;
     background: var(--grey-2);
-    box-shadow: 0px 2px 6px 6px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.25);
     text-decoration: none;
     border: none;
-    height: 70px;
+    height: 47px;
     width: 100%;
     margin: 0;
 }
@@ -113,9 +116,9 @@ main {
 }
 
 .button1 button {
-    width: 80%;
+    width: 70%;
     max-width: 300px;
-    height: 50px;
+    height: 52px;
     border-radius: 25px;
     box-shadow: 0px 11px 15px 0px rgba(0, 0, 0, 0.25);
     color: white;
@@ -178,41 +181,40 @@ main {
 /* Restaurants */
 .restaurants {
     background-color: #f6f6f6;
-    padding-top: 10px;
-    margin-top: 50px;
-    height: auto;
+    padding-top: 20px;
+    margin-top: 120px;
+    height: 1150px;
     width: auto;
 }
 
 .restaurants_fonctionnement h2 {
-    font-size: 30px;
-    margin: 50px 0 0 20px;
+    font-size: 22px;
+        margin: 23px 0 0 21px;
 }
 
 .title-restaurants {
-    color: var(--grey);
+    color: var(--Grey, #353535);
     text-align: center;
-    font-size: 25px;
+    font-size: 36px;
     font-weight: 300;
-    margin-top: 20px;
+    margin-top: 27px;
 }
 
 /* Styles pour les cartes */
 .StyleCard {
-    border-radius: 20px;
+    border-radius: 1.25rem;
     background: #FFF;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
-    max-width: 400px;
-    height: auto;
-    margin: 20px 0;
+    width: 289px;
+    height: 233px;
+    margin: 18px 15PX 0 15px;
 }
 
 .card {
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 200px;
     border: 1px solid #ccc;
     overflow: hidden;
     position: relative;
@@ -230,7 +232,7 @@ main {
 
 .special-card-image1 {
     width: 100%;
-    height: 344px;
+    height: 158px;
     border-radius: 1.25rem 1.25rem 0 0;
     background-image: url("assets/Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     background-size: 104%;
@@ -241,7 +243,7 @@ main {
 
 .special-card-image2 {
     width: 100%;
-    height: 344px;
+    height: 200px;
     border-radius: 1.25rem 1.25rem 0 0;
     background-image: url("assets/Images et textes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
     background-size: 105%;
@@ -251,7 +253,7 @@ main {
 
 .special-card-image3 {
     width: 100%;
-    height: 343px;
+    height: 200px;
     border-radius: 1.25rem 1.25rem 0 0;
     background-image: url("assets/Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
     background-size: 101%;
@@ -259,106 +261,413 @@ main {
     background-repeat: no-repeat;
 }
 
+
+  .special-card-image4 {
+      width: 100%;
+      height: 200px;
+      border-radius: 1.25rem 1.25rem 0 0;
+      background-image: url("assets/Images et textes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+        );
+      background-size: 101%;
+      background-position: center 104%;
+      background-repeat: no-repeat;
+}
+
 /* Styles pour le contenu de la carte */
 .card-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 10px;
+    align-self: stretch;
+    padding-left: 20px;
 }
 
 /* Styles pour les titres et sous-titres de cartes */
 .card-title {
-    font-size: 20px;
-    font-weight: bold;
+    Margin-bottom: 0.3rem;
+    font-size: 18px;
 }
 
 .card-subtitle {
-    font-size: 15px;
-    font-weight: 300;
-    margin-top: 2px;
+    font-size: 18px;
+    margin: 1px 0 15px 0;
 }
 
-.card-description {
-    font-size: 12px;
-    font-weight: normal;
-    margin-top: 3px;
+/* Styles pour les liens avec les cartes */
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-/* Media Queries pour les tablettes (740px à 1024px) */
-@media (min-width: 740px) and (max-width: 1024px) {
-    .logo img {
-        width: 60%;
-        max-width: 250px;
+.nouveau {
+    background: var(--Primary, #99E2D0);
+    width: 21%;
+    height: 5.5%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    color: #008766;
+    position: absolute;
+    left: 61%;
+    font-size: 22px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    margin: 22px 0 0 0;
+}
+
+.like {
+    width: 7%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 35rem;
+}
+
+.footer{
+    display: flex;
+    align-items: flex-start;
+    background-color: #353535;
+    color: #f6f6f6;
+    padding-left:20px ;
+}
+
+
+/* Media Queries pout les tablets (plus de 720px) */
+
+@media (min-width: 720px) {
+
+    /* Général */
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: var(--font-text);
     }
 
-    .local {
-        height: 80px;
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    /* Contenu principal */
+    main {
+        flex: 1;
+    }
+
+    /* Ground top */
+    .ground-top {
+        background-color: #f6f6f6;
+        height: 35.4rem;
+        width: 100%;
+        margin-top: 9.97px;
+    }
+
+    /* Logo */
+    .logo {
+        display: flex;
+        justify-content: center;
+        margin: 42px 0 26px;
+    }
+
+    img {
+        width: 350px;
     }
 
     .local svg {
-        width: 35px;
-        height: 35px;
+        width: 5%;
+        height: 18%;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 12rem;
+        align-content: center;
     }
 
     .ville {
-        font-size: 25px;
+        font-size: 33px;
+        font-weight: 500;
+        margin: 0 0 0 80px;
+    }
+
+    /* Localisation */
+    .local {
+        color: var(--Grey, #2d2424);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 31px;
+        background: var(--Grey-2, #efefef);
+        box-shadow: 0px 2px 6px 6px rgba(0, 0, 0, 0.25);
+        text-decoration: none;
+        border: none;
+        height: 95px;
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Titre principal */
+    .title-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-main h1,
+    .title-main h2 {
+        text-align: center;
+        font-family: var(--font-text);
+        color: var(--Grey, #353535);
     }
 
     .title-main h1 {
-        font-size: 35px;
+        font-size: 45px;
+        font-weight: 700;
+        margin: 70px 0px 0 0;
+        padding: 0px 105px 0 107px;
     }
 
     .title-main h2 {
-        font-size: 25px;
+
+        font-size: 34px;
+        font-weight: 300;
+        margin: 27px 0px 55px 33px;
     }
 
-    .button1 button {
-        width: 60%;
-        max-width: 400px;
-        height: 60px;
+    /* Bouton principal */
+    .button button {
+        width: 440px;
+        height: 105px;
+        border-radius: 3.5625rem;
+        box-shadow: 0px 11px 15px 0px rgba(0, 0, 0, 0.25);
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        border: none;
+        font-weight: 500;
+        margin: 10px 0 0 124px;
+        background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
     }
 
+    /* Fonctionnement */
     .fonctionnement h2 {
-        font-size: 30px;
+        font-size: 47px;
+        margin: 95px 0 0 33px;
     }
 
     .numero {
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 17px;
+        background: var(--Primary, #9356DC);
+        width: 3rem;
+        height: 3rem;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        position: absolute;
+        font-size: 27px;
+        justify-content: center;
+        margin: 107px 0 0 27px;
     }
 
     .choix_button {
-        width: 70%;
-        height: 60px;
-        font-size: 22px;
+        width: 37.15538rem;
+        height: 8.52369rem;
+        border-radius: 3rem;
+        background: #f6f6f6;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.20);
+        border: #f6f6f6;
+        font-size: 27px;
+        font-weight: bold;
+        margin: 59px 0 0 54px;
+    }
+
+    .choix ol {
+        list-style: none;
+        padding: 0;
+    }
+
+    .choix img {
+        width: 30px;
+        height: 40px;
+        margin: 14px 0 28px 147px;
+    }
+
+    /* Restaurants */
+    .restaurants {
+        background-color: #f6f6f6;
+        padding-top: 20px;
+        margin-top: 120px;
+        height: 2400px;
+        width: auto;
     }
 
     .restaurants_fonctionnement h2 {
-        font-size: 35px;
+        font-size: 43px;
+        margin: 75px 0 0 33px;
     }
 
     .title-restaurants {
-        font-size: 28px;
+        color: var(--Grey, #353535);
+        text-align: center;
+        font-size: 36px;
+        font-weight: 300;
+        margin-top: 27px;
     }
 
+    /* Styles pour les cartes */
     .StyleCard {
-        width: 80%;
-        max-width: 500px;
+        border-radius: 2.25rem;
+        background: #FFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 622px;
+        height: 465px;
+        margin: 40px 0 0 25px;
     }
 
+    .card {
+        width: 300px;
+        height: 200px;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* Styles pour l'image de la carte */
+    .card-image {
+        width: 100%;
+        height: 344px;
+        border-radius: 1.25rem 1.25rem 0 0;
+        object-fit: inherit;
+        object-position: center;
+        background-position: 50% 50%;
+    }
+
+    .special-card-image1 {
+        width: 100%;
+        height: 344px;
+        border-radius: 1.25rem 1.25rem 0 0;
+        background-image: url("assets/Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+        background-size: 104%;
+        background-position: center 100%;
+        background-repeat: no-repeat
+    }
+
+
+    .special-card-image2 {
+        width: 100%;
+        height: 344px;
+        border-radius: 1.25rem 1.25rem 0 0;
+        background-image: url("assets/Images et textes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+        background-size: 105%;
+        background-position: center 61%;
+        background-repeat: no-repeat
+    }
+
+    .special-card-image3 {
+        width: 100%;
+        height: 343px;
+        border-radius: 1.25rem 1.25rem 0 0;
+        background-image: url("assets/Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+        background-size: 101%;
+        background-position: center 104%;
+        background-repeat: no-repeat;
+    }
+
+    /* Styles pour le contenu de la carte */
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+        padding-left: 20px;
+    }
+
+    /* Styles pour les titres et sous-titres de cartes */
     .card-title {
-        font-size: 25px;
+        margin-bottom: -0.3rem;
+        font-size: 35px;
     }
 
     .card-subtitle {
-        font-size: 19px;
+        font-size: 30px;
+        margin-top: 10px;
     }
 
-    .card-description {
-        font-size: 15px;
+    /* Styles pour les liens avec les cartes */
+    a {
+        text-decoration: none;
+        color: inherit;
     }
+
+    .nouveau {
+        background: var(--Primary, #99E2D0);
+        width: 21%;
+        height: 5.5%;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        color: #008766;
+        position: absolute;
+        left: 61%;
+        font-size: 22px;
+        font-weight: 500;
+        justify-content: center;
+        align-items: center;
+        margin: 22px 0 0 0;
+    }
+
+    .like {
+        width: 7%;
+        height: 8rem;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 35rem;
+    }
+
+    /* Footer */
+
+
+    .footer {
+        flex: 1;
+        background-color: #353535;
+    }
+
+    .column {
+        margin: 0 0 0 10px;
+        color: #f6f6f6;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 320px;
+    }
+
+    .column p {
+
+        font-size: 29px;
+        display: flex;
+        flex-direction: row;
+        margin: 10px 0 0 30px;
+        align-items: baseline;
+    }
+
+    .footer__svg {
+        width: 50px;
+        height: 22px;
+        margin: 0 0px 0px -13px;
+    }
+
+    .footer__logo {
+        width: 178px;
+        height: 52px;
+        margin: 35px 0 20px 34px;
+    }
+
 }
 
 /* Media Queries pour les desktops (plus de 1024px) */
