@@ -336,22 +336,24 @@ a {
     align-items: center;
     position: absolute;
     left: 16rem;
+    border: #2d2424;
 }
 
 .restaurants .like input[type="checkbox"] {
     display: none;
 }
 
-.restaurants .like label {
-    display: block;
-    background-image: url('/assets/Images et textes Ohmyfood/images/logo/téléchargement.png');
-    background-size: cover;
-}
-
 .restaurants .like input[type="checkbox"]:checked+label {
     background-image: url('assets/Images et textes Ohmyfood/images/logo/Like.svg');
 }
 
+.restaurants .like label {
+    display: block;
+    width: 32px;
+    height: 21.1px;
+    background-image: url('/assets/Images et textes Ohmyfood/images/logo/téléchargement.png');
+    background-size: cover;
+}
 /* footer */
 
 .footer {
@@ -376,430 +378,121 @@ a {
     margin: 9px 0 0px 0px;
 }
 
-.restaurants .like input[type="checkbox"] {
-    display: none;
-}
+/* bureau */
 
-.restaurants .like label {
-    display: block;
-    width: 32px;
-    height: 21.1px;
-    background-image: url('/assets/Images et textes Ohmyfood/images/logo/téléchargement.png');
-    background-size: cover;
-}
+@media (min-width: 1200px) {
 
-.restaurants .like input[type="checkbox"]:checked+label {
-    background-image: url('assets/Images et textes Ohmyfood/images/logo/Like.svg');
-}
-
-/* Media Queries pout les tablets (plus de 720px) */
-
-@media (min-width: 720px) {
-
-    /* Général */
-    html,
-    body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        font-family: var(--font-text);
+    .logo img.main-logo {
+        width: 50%;
+        max-width: 400px;
     }
 
-    body {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-    }
-
-    /* Contenu principal */
-    main {
-        flex: 1;
-    }
-
-    /* Ground top */
-    .ground-top {
-        background-color: #f6f6f6;
-        height: 35.4rem;
-        width: 100%;
-        margin-top: 9.97px;
-    }
-
-    /* Logo */
-    .logo {
-        display: flex;
-        justify-content: center;
-        margin: 42px 0 26px;
-    }
-
-    img {
-        width: 350px;
-    }
-
-    .local svg {
-        width: 5%;
-        height: 18%;
-        display: flex;
-        align-items: center;
-        position: absolute;
-        left: 12rem;
-        align-content: center;
+    .local {
+        box-shadow: none;
     }
 
     .ville {
-        font-size: 33px;
-        font-weight: 500;
-        margin: 0 0 0 80px;
-    }
-
-    /* Localisation */
-    .local {
-        color: var(--Grey, #2d2424);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 31px;
-        background: var(--Grey-2, #efefef);
-        box-shadow: 0px 2px 6px 6px rgba(0, 0, 0, 0.25);
-        text-decoration: none;
-        border: none;
-        height: 95px;
-        width: 100%;
+        font-size: 15px;
         margin: 0;
     }
 
-    /* Titre principal */
-    .title-main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .title-main h1,
-    .title-main h2 {
-        text-align: center;
-        font-family: var(--font-text);
-        color: var(--Grey, #353535);
-    }
-
-    .title-main h1 {
-        font-size: 45px;
-        font-weight: 700;
-        margin: 70px 0px 0 0;
-        padding: 0px 105px 0 107px;
-    }
-
-    .title-main h2 {
-
-        font-size: 34px;
-        font-weight: 300;
-        margin: 27px 0px 55px 33px;
-    }
-
-    /* Bouton principal */
-    .button button {
-        width: 440px;
-        height: 105px;
-        border-radius: 3.5625rem;
-        box-shadow: 0px 11px 15px 0px rgba(0, 0, 0, 0.25);
-        color: white;
-        font-size: 2rem;
-        text-align: center;
-        border: none;
-        font-weight: 500;
-        margin: 10px 0 0 124px;
-        background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-    }
-
-    /* Fonctionnement */
-    .fonctionnement h2 {
-        font-size: 47px;
-        margin: 95px 0 0 33px;
-    }
-
-    .numero {
-        background: var(--Primary, #9356DC);
-        width: 3rem;
-        height: 3rem;
-        border-radius: 100px;
-        display: flex;
-        align-items: center;
-        color: #fff;
-        position: absolute;
-        font-size: 27px;
-        justify-content: center;
-        margin: 107px 0 0 27px;
-    }
-
-    .choix_button {
-        width: 37.15538rem;
-        height: 8.52369rem;
-        border-radius: 3rem;
-        background: #f6f6f6;
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.20);
-        border: #f6f6f6;
-        font-size: 27px;
-        font-weight: bold;
-        margin: 59px 0 0 54px;
-    }
-
-    .choix ol {
-        list-style: none;
-        padding: 0;
-    }
-
-    .choix img {
-        width: 30px;
-        height: 40px;
-        margin: 14px 0 28px 147px;
-    }
-
-    /* Restaurants */
-    .restaurants {
-        background-color: #f6f6f6;
-        padding-top: 20px;
-        margin-top: 120px;
-        height: 2400px;
-        width: auto;
-    }
-
-    .restaurants_fonctionnement h2 {
-        font-size: 43px;
-        margin: 75px 0 0 33px;
-    }
-
-    .title-restaurants {
-        color: var(--Grey, #353535);
-        text-align: center;
-        font-size: 36px;
-        font-weight: 300;
-        margin-top: 27px;
-    }
-
-    /* Styles pour les cartes */
-    .StyleCard {
-        border-radius: 2.25rem;
-        background: #FFF;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 622px;
-        height: 465px;
-        margin: 40px 0 0 25px;
-    }
-
-    .card {
-        width: 300px;
-        height: 200px;
-        border: 1px solid #ccc;
-        overflow: hidden;
+    .local svg {
         position: relative;
+        left: auto;
+        bottom: 1px;
+        width: 15px
     }
 
-    /* Styles pour l'image de la carte */
-    .card-image {
-        width: 100%;
-        height: 344px;
-        border-radius: 1.25rem 1.25rem 0 0;
-        object-fit: inherit;
-        object-position: center;
-        background-position: 50% 50%;
-    }
-
-    .special-card-image1 {
-        width: 100%;
-        height: 344px;
-        border-radius: 1.25rem 1.25rem 0 0;
-        background-image: url("assets/Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-        background-size: 104%;
-        background-position: center 100%;
-        background-repeat: no-repeat
-    }
-
-
-    .special-card-image2 {
-        width: 100%;
-        height: 344px;
-        border-radius: 1.25rem 1.25rem 0 0;
-        background-image: url("assets/Images et textes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-        background-size: 105%;
-        background-position: center 61%;
-        background-repeat: no-repeat
-    }
-
-    .special-card-image3 {
-        width: 100%;
-        height: 343px;
-        border-radius: 1.25rem 1.25rem 0 0;
-        background-image: url("assets/Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-        background-size: 101%;
-        background-position: center 104%;
-        background-repeat: no-repeat;
-    }
-
-    /* Styles pour le contenu de la carte */
-    .card-content {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        align-self: stretch;
-        padding-left: 20px;
-    }
-
-    /* Styles pour les titres et sous-titres de cartes */
-    .card-title {
-        margin-bottom: -0.3rem;
-        font-size: 35px;
-    }
-
-    .card-subtitle {
-        font-size: 30px;
-        margin-top: 10px;
-    }
-
-    /* Styles pour les liens avec les cartes */
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    .nouveau {
-        background: var(--Primary, #99E2D0);
-        width: 21%;
-        height: 5.5%;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        color: #008766;
-        position: absolute;
-        left: 61%;
-        font-size: 22px;
-        font-weight: 500;
-        justify-content: center;
-        align-items: center;
-        margin: 22px 0 0 0;
-    }
-
-    .like {
-        width: 7%;
-        height: 8rem;
-        display: flex;
-        align-items: center;
-        position: absolute;
-        left: 35rem;
-    }
-
-    /* Footer */
-
-
-    .footer {
-        flex: 1;
-        background-color: #353535;
-    }
-
-    .column {
-        margin: 0 0 0 10px;
-        color: #f6f6f6;
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        height: 320px;
-    }
-
-    .column p {
-
-        font-size: 29px;
-        display: flex;
-        flex-direction: row;
-        margin: 10px 0 0 30px;
-        align-items: baseline;
-    }
-
-    .footer__svg {
-        width: 50px;
-        height: 22px;
-        margin: 0 0px 0px -13px;
-    }
-
-    .footer__logo {
-        width: 178px;
-        height: 52px;
-        margin: 35px 0 20px 34px;
-    }
-
-}
-
-/* Media Queries pour les desktops (plus de 1024px) */
-@media (min-width: 1024px) {
-    .logo img {
-        width: 50%;
-        max-width: 300px;
-    }
-
-    .local {
-        height: 90px;
-    }
-
-    .local svg {
-        width: 40px;
-        height: 40px;
-    }
-
-    .ville {
-        font-size: 30px;
+    .ground-top {
+        margin: inherit;
+        height: 215px;
     }
 
     .title-main h1 {
-        font-size: 40px;
+        font-size: 44px;
     }
 
     .title-main h2 {
-        font-size: 30px;
-    }
-
-    .button1 button {
-        width: 50%;
-        max-width: 500px;
-        height: 70px;
-    }
-
-    .fonctionnement h2 {
-        font-size: 35px;
-    }
-
-    .numero {
-        width: 3rem;
-        height: 3rem;
         font-size: 20px;
     }
 
+    .button1 button {
+        width: 15%;
+    }
+
+    /* Style pour la liste */
+
+    .fonctionnement h2 {
+        margin-left: 20rem;
+    }
+
+    .choix {
+        display: flex;
+        justify-content: center;
+    }
+
     .choix_button {
-        width: 60%;
-        height: 70px;
-        font-size: 25px;
+        width: 25rem;
+        height: 55px;
+        box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.1);
+        font-size: 15px;
+        font-weight: bold;
+        font-size: 11px;
+        margin: 20px 0 0 23px;
+    }
+
+
+    .choix ol {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0 0 0 30px;
+        list-style: none;
+    }
+
+    .choix li {
+        display: flex;
+        align-items: center;
+        margin-right: 0;
+        justify-content: flex-start;
+    }
+
+    /* Style pour les images du contenu fonctionnement */
+
+    .choix .numero img {
+        width: 16px;
+        height: 22px;
+        margin: 0px 0px 0px 99px;
+    }
+
+    /* Style pour les numéros */
+
+    .choix .numero {
+        width: 25px;
+        height: 25px;
+        margin: 15px 0 0 15px;
+        font-size: 13px;
     }
 
     .restaurants_fonctionnement h2 {
-        font-size: 40px;
+        font-size: 28px;
     }
 
     .title-restaurants {
-        font-size: 32px;
+        font-size: 48px;
+    }
+
+    .card {
+        width: 400px;
+        height: 250px;
+    }
+
+    .card-image {
+        height: 250px;
     }
 
     .StyleCard {
-        width: 70%;
-        max-width: 600px;
-    }
-
-    .card-title {
-        font-size: 30px;
-    }
-
-    .card-subtitle {
-        font-size: 22px;
-    }
-
-    .card-description {
-        font-size: 18px;
+        width: 350px;
+        height: 300px;
     }
 }

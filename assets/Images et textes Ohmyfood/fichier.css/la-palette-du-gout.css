@@ -1,0 +1,129 @@
+/* Import des polices */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
+
+/* Variables CSS */
+:root {
+    --font-logo: 'Shrikhand', cursive;
+    --font-text: 'Roboto', sans-serif;
+    --color-primary: #9356DC;
+    --color-secondary: #FF79DA;
+    --color-tertiary: #99E2D0;
+    --grey: #2d2424;
+    --grey-2: #efefef;
+    --button-gradient: linear-gradient(13deg, #9356DC -12.44%, #FF79DA 115.93%);
+    --carte-resto: height: 200px, width: 100%;
+}
+
+/* Styles globaux et éléments communs */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-text);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main {
+    flex: 1;
+}
+
+/* Ground top */
+.ground-top{
+    background-color: #922525;
+    height: 158px;
+    width: 100%;
+}
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Style pour l'image de la flèche de retour */
+
+.back-icon {
+    width: 30px;
+    height: auto;
+    margin: 10px 45px 5px 15px;
+}
+
+/* Style pour le logo principal */
+
+.main-logo {
+    width: 150px;
+    height: auto;
+    margin: 20px 0 10px 0;
+}
+
+.image1 {
+    width: 100%;
+    height: 233px;
+    background-image: url("/assets/Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-size: 109%;
+    background-position: center 100%;
+    background-repeat: no-repeat
+}
+
+
+/* Localisation */
+.local {
+    color: var(--grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: var(--grey-2);
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    border: none;
+    height: 47px;
+    width: 100%;
+    margin: 0;
+}
+
+.local svg {
+    width: 24px;
+    height: 19px;
+    position: absolute;
+    left: 76px;
+}
+
+/* Styles communs additionnels... */
+
+/* footer */
+.footer {
+    display: flex;
+    align-items: flex-start;
+    background-color: #353535;
+    color: #f6f6f6;
+    padding-left: 20px;
+    height: 173px;
+}
+
+.footer__logo {
+    margin-top: 20px;
+}
+
+.footer__svg {
+    margin: 0px 4px 0 0;
+}
+
+.footer p {
+    font-size: 16px;
+    margin: 9px 0 0px 0px;
+}
+
+/* Media Queries */
+@media (min-width: 720px) {
+    /* Ajustements pour tablettes */
+}
+
+@media (min-width: 1024px) {
+    /* Ajustements pour desktops */
+}
