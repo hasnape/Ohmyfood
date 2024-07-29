@@ -217,7 +217,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 289px;
+    width: 91%;
     height: 233px;
     margin: 18px 15PX 0 15px;
 }
@@ -231,14 +231,7 @@ main {
 }
 
 /* Styles pour l'image de la carte */
-.card-image {
-    width: 100%;
-    height: 200px;
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-    object-position: center;
-    background-position: 50% 50%;
-}
+
 
 .special-card-image1 {
     width: 100%;
@@ -335,7 +328,7 @@ a {
     display: flex;
     align-items: center;
     position: absolute;
-    left: 16rem;
+    left: 82%;
     border: #2d2424;
 }
 
@@ -354,6 +347,7 @@ a {
     background-image: url('/assets/Images et textes Ohmyfood/images/logo/téléchargement.png');
     background-size: cover;
 }
+
 /* footer */
 
 .footer {
@@ -380,11 +374,11 @@ a {
 
 /* bureau */
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
 
-    .logo img.main-logo {
-        width: 50%;
-        max-width: 400px;
+    .logo img {
+            width: 80%;
+            max-width: 230px;
     }
 
     .local {
@@ -400,12 +394,12 @@ a {
         position: relative;
         left: auto;
         bottom: 1px;
-        width: 15px
+        width: 15px;
     }
 
     .ground-top {
         margin: inherit;
-        height: 215px;
+        height: 235px;
     }
 
     .title-main h1 {
@@ -418,29 +412,31 @@ a {
 
     .button1 button {
         width: 15%;
+        height: 60px;
     }
 
     /* Style pour la liste */
-
     .fonctionnement h2 {
-        margin-left: 20rem;
+        margin-left: 14rem;
+        font-size: 28px;
+        margin: 50px 0px 15px 151px
     }
 
     .choix {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        padding-left: 90px;
     }
 
     .choix_button {
-        width: 25rem;
-        height: 55px;
+        width: 26rem;
+        height: 84px;
         box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.1);
-        font-size: 15px;
+        font-size: 18px;
         font-weight: bold;
-        font-size: 11px;
-        margin: 20px 0 0 23px;
-    }
+        margin: 20px 0 0 41px;
 
+    }
 
     .choix ol {
         display: flex;
@@ -458,41 +454,237 @@ a {
     }
 
     /* Style pour les images du contenu fonctionnement */
-
     .choix .numero img {
-        width: 16px;
-        height: 22px;
-        margin: 0px 0px 0px 99px;
+        width: 25px;
+        height: 30px;
+        margin: 0px 0px 0px 120px;
     }
 
     /* Style pour les numéros */
-
     .choix .numero {
-        width: 25px;
-        height: 25px;
-        margin: 15px 0 0 15px;
-        font-size: 13px;
+        width: 29px;
+        height: 29px;
+        margin: 15px 0 0 30px;
+        font-size: 15px;
+        font-weight: 300;
     }
 
     .restaurants_fonctionnement h2 {
         font-size: 28px;
+        position: absolute;
+        margin: 91px 0px 0px 151px;
     }
 
     .title-restaurants {
         font-size: 48px;
     }
 
-    .card {
-        width: 400px;
-        height: 250px;
+    a {
+        text-decoration: none;
+        color: inherit;
+        width: 42%;
+        height: 42%;
     }
 
-    .card-image {
-        height: 250px;
+    /* Nouveau style pour les cartes en grille */
+    .restaurants {
+        gap: 50px;
+        height: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 50px 90px 0px 85px;
+        align-content: center;
+        justify-content: space-evenly;
     }
 
     .StyleCard {
-        width: 350px;
-        height: 300px;
+        position: relative;
+        /* Nécessaire pour le positionnement absolu des éléments enfants */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 1.25rem;
+        background: #FFF;
+        overflow: hidden;
+        /* Assure que le contenu ne dépasse pas les bords de la carte */
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        /* Prend 80% de la largeur de la colonne */
+        height: 320px;
+        /* Hauteur fixe */
+        margin: inherit;
+    }
+
+    /* Styles pour l'image de la carte */
+    .special-card-image1 {
+        width: 100%;
+        height: 217px;
+        border-radius: 1.25rem 1.25rem 0 0;
+        background-image: url("assets/Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+        background-size: 100%;
+        background-position: center 70%;
+        background-repeat: no-repeat
+    }
+
+
+    .special-card-image2 {
+        width: 100%;
+        height: 217px;
+        border-radius: 1.25rem 1.25rem 0 0;
+        background-size: 100%;
+        background-position: center 56%;
+    }
+
+    .special-card-image3 {
+        width: 100%;
+        height: 217px;
+        border-radius: 1.25rem 1.25rem 0 0;
+        background-image: url("assets/Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+        background-size: 100%;
+        background-position: center 70%;
+        background-repeat: no-repeat;
+    }
+
+
+    .special-card-image4 {
+        width: 100%;
+        height: 217px;
+        border-radius: 1.25rem 1.25rem 0 0;
+        background-image: url("assets/Images et textes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+            );
+        background-size: 102%;
+        background-position: center 68%;
+        background-repeat: no-repeat
+    }
+
+    .special-card-image1 {
+        background-image: url("assets/Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    }
+
+    .special-card-image2 {
+        background-image: url("assets/Images et textes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    }
+
+    .special-card-image3 {
+        background-image: url("assets/Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    }
+
+    .special-card-image4 {
+        background-image: url("assets/Images et textes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+    }
+
+    /* Style spécifique pour le badge "Nouveau" */
+    .nouveau {
+        background: var(--Primary, #99E2D0);
+        width: 15%;
+        height: 35px;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        color: #008766;
+        position: absolute;
+        top: 7px;
+        margin-left: 63px;
+        font-size: 18px;
+        font-weight: 500;
+        justify-content: center;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+
+    /* Style spécifique pour les icônes de coeur */
+    .like {
+        Width: 72%;
+        height: 30%;
+        left: 85%;
+        bottom: 2%;
+        margin-right: 0;
+
+    }
+
+    .like input[type="checkbox"] {
+        display: none;
+    }
+
+    .like input[type="checkbox"]:checked+label {
+        background-image: url('assets/Images et textes Ohmyfood/images/logo/Like.svg');
+    }
+
+    .restaurants .like label {
+        height: 31%;
+    }
+
+    /* Ajustement de la carte et de l'image */
+    .card {
+        width: 100%;
+        /* Les cartes prennent toute la largeur de leur cellule de grille */
+        height: auto;
+        /* Hauteur automatique pour conserver les proportions */
+        position: relative;
+        /* Nécessaire pour positionner les éléments internes */
+    }
+
+    .card-title {
+        font-size: 20px;
+        /* Taille de la police pour le titre */
+        margin-bottom: 0.3rem;
+    }
+
+    .card-subtitle {
+        font-size: 16px;
+        /* Taille de la police pour le sous-titre */
+        margin: 1px 0 15px 0;
+        font-weight: 300;
+    }
+
+
+    /* footer */
+
+    .footer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        /* Ajoute un peu de padding pour l'espacement */
+        height: 145px;
+    }
+
+    .footer .column {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        /* Espacement entre les éléments */
+        margin: 0px 301px 35px 0px;
+
+
+    }
+
+    .footer__logo {
+        margin: 0 0px 0 780px;
+        width: 135px;
+        position: absolute;
+    }
+
+    .footer__svg {
+        margin-right: 8px;
+        width: 15px;
+
+
+        /* Ajoute un espace à droite des icônes SVG */
+    }
+
+    .footer p {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .footer .soloP {
+        margin-left: 69px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 26px;
     }
 }
