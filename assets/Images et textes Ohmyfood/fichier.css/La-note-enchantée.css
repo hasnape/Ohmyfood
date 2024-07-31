@@ -44,14 +44,14 @@ main {
     align-items: center;
 }
 
-.logo a {
-    text-decoration: none;
-    color: inherit;
-    width: 42%;
-    height: 42%;
-    display: flex;
-    justify-content: center;
-}
+.logo {
+        text-decoration: none;
+        color: inherit;
+        width: 42%;
+        height: 42%;
+        display: flex;
+        justify-content: center;
+    }
 /* Style pour l'image de la flèche de retour */
 
 .back-icon {
@@ -361,12 +361,7 @@ a {
             font-size: 48px;
         }
     
-        a {
-            text-decoration: none;
-            color: inherit;
-            width: 42%;
-            height: 42%;
-        }
+        
     
         /* Nouveau style pour les cartes en grille */
     
