@@ -53,6 +53,15 @@ main {
     max-width: 200px;
 }
 
+.logo a {
+    text-decoration: none;
+    color: inherit;
+    width: 42%;
+    height: 42%;
+    display: flex;
+    justify-content: center;
+}
+
 /* Localisation */
 .local {
     color: var(--grey);
@@ -484,6 +493,8 @@ a {
         color: inherit;
         width: 42%;
         height: 42%;
+        display: flex;
+        justify-content: center;
     }
 
     /* Nouveau style pour les cartes en grille */

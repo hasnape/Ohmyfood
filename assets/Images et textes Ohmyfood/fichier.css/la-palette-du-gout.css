@@ -44,6 +44,15 @@ main {
     align-items: center;
 }
 
+.logo a {
+    text-decoration: none;
+    color: inherit;
+    width: 42%;
+    height: 42%;
+    display: flex;
+    justify-content: center;
+}
+
 /* Style pour l'image de la flèche de retour */
 
 .back-icon {
