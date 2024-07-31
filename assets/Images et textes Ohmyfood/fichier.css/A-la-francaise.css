@@ -33,7 +33,6 @@ main {
 
 /* Ground top */
 .ground-top {
-    background-color: #922525;
     height: 158px;
     width: 100%;
 }
@@ -64,7 +63,7 @@ main {
 .image1 {
     width: 100%;
     height: 233px;
-    background-image: url("/assets/Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-image: url("/assets/Images et textes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
     background-size: 109%;
     background-position: center 100%;
     background-repeat: no-repeat
@@ -99,8 +98,27 @@ h1 {
     padding: 0px 20px;
 }
 
+.plats {
+    margin: 59px 0 0 23px;
+    font-weight: 300;
+    position: relative;
+    display: inline-block;
+}
+
+
+
+.plats::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: 257px;
+    top: 31px;
+    height: 4px;
+    background-color: var(--color-tertiary);
+}
+
 /* Bouton principal */
-/* Conteneur du bouton */
+
 .button1 {
     display: flex;
     justify-content: center;
@@ -136,45 +154,6 @@ h1 {
 
 .fonctionnement {
     width: 100%;
-}
-
-.numero {
-    background: var(--color-primary);
-    width: 25px;
-    height: 25px;
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    position: absolute;
-    font-size: 12px;
-    font-weight: 500;
-    justify-content: center;
-    margin: 42px 0 0 15px;
-}
-
-.choix_button {
-    width: 88%;
-    height: 64px;
-    border-radius: 20px;
-    background: #f6f6f6;
-    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.2);
-    border: #f6f6f6;
-    font-size: 15px;
-    font-weight: bold;
-    margin: 22px 0 0 27px;
-    padding-left: 20px;
-}
-
-.choix ol {
-    list-style: none;
-    padding: 0;
-}
-
-.choix img {
-    width: 20px;
-    height: 20px;
-    margin: 14px 0 20px 71px;
 }
 
 /* Restaurants */
@@ -332,10 +311,10 @@ a {
     }
 
     .back-icon {
-        position: relative;
+        position: absolute;
         width: 40px;
         top: 13px;
-        right: 40rem;
+        right: 93%;
     }
 
     .ground-top {
@@ -364,60 +343,6 @@ a {
         border-radius: 30px;
     }
 
-    /* Style pour la liste */
-    .fonctionnement h2 {
-        margin-left: 14rem;
-        font-size: 28px;
-        margin: 50px 0px 15px 151px
-    }
-
-    .choix {
-        display: flex;
-        justify-content: center;
-        padding-left: 90px;
-    }
-
-    .choix_button {
-        width: 26rem;
-        height: 84px;
-        box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.1);
-        font-size: 18px;
-        font-weight: bold;
-        margin: 20px 0 0 41px;
-
-    }
-
-    .choix ol {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        margin: 0 0 0 30px;
-        list-style: none;
-    }
-
-    .choix li {
-        display: flex;
-        align-items: center;
-        margin-right: 0;
-        justify-content: center;
-    }
-
-    /* Style pour les images du contenu fonctionnement */
-    .choix .numero img {
-        width: 25px;
-        height: 30px;
-        margin: 0px 0px 0px 120px;
-    }
-
-    /* Style pour les numéros */
-    .choix .numero {
-        width: 29px;
-        height: 29px;
-        margin: 15px 0 0 30px;
-        font-size: 15px;
-        font-weight: 300;
-    }
-
     .restaurants_fonctionnement h2 {
         font-size: 28px;
         position: absolute;
@@ -439,7 +364,7 @@ a {
 
     .restaurants {
         width: 70%;
-        height: 1440px;
+        height: 1460px;
         display: flex;
         padding: inherit;
         margin: auto;
@@ -465,20 +390,18 @@ a {
     }
 
     .plats {
-        margin: 59px 0 0 23px;
+        margin: 55px 29px 23px;
         font-weight: 300;
         position: relative;
-        display: inline-block;
+        display: block;
     }
-
-
 
     .plats::after {
         content: '';
         position: absolute;
         left: 0px;
-        right: 257px;
-        top: 31px;
+        right: 245px;
+        top: 25px;
         height: 4px;
         background-color: var(--color-tertiary);
     }
@@ -555,7 +478,7 @@ a {
         justify-content: flex-end;
         align-items: flex-end;
         height: 136px;
-        margin-top: 1594px;
+        margin-top: 1618px;
     }
 
     .footer .column {
