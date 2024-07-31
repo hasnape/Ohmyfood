@@ -63,7 +63,7 @@ main {
 .image1 {
     width: 100%;
     height: 233px;
-    background-image: url("/assets/Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-image: url("/assets/Images et textes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
     background-size: 109%;
     background-position: center 100%;
     background-repeat: no-repeat
@@ -300,102 +300,111 @@ a {
 
 
     header {
-        display: flex;
-        justify-items: center;
-        justify-content: center;
-    }
-
-    .logo img {
-        width: 250px;
-        margin: 30px 0 30px 0;
-    }
-
-    .back-icon {
-        position: relative;
-        width: 40px;
-        top: 13px;
-        right: 40rem;
-    }
-
-    .ground-top {
-        margin: inherit;
-        height: 235px;
-    }
-
-    .image1 {
-        height: 440px;
-        background-size: 100%;
-        background-position: center 58%;
-    }
-
-    h1 {
-        font-size: 34px;
-        font-family: var(--font-logo);
-    }
-
-   
-    .restaurants_fonctionnement h2 {
-        font-size: 28px;
-        position: absolute;
-        margin: 91px 0px 0px 151px;
-    }
-
-    .title-restaurants {
-        font-size: 48px;
-    }
-
-    a {
-        text-decoration: none;
-        color: inherit;
-        width: 42%;
-        height: 42%;
-    }
-
-    /* Nouveau style pour les cartes en grille */
-
-    .restaurants {
-        width: 70%;
-        height: 1520px;
-        display: flex;
-        padding: inherit;
-        margin: auto;
-        position: relative;
-        bottom: 51px;
-        border-radius: 30px 30px 0 0;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .titre {
-        margin: 51px 0PX 0px 0px;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        font-weight: 100;
-    }
-
-    .menu {
-        margin: 0px 0PX 0px 165px
-    }
-
-    .plats {
-        margin: 59px 0 0 23px;
-        font-weight: 300;
-        position:relative;
-        display: inline-block;
-    }
-
-    .plats::after {
-        content: '';
-        position: absolute;
-        left: 0px;
-        right: 257px;
-        top: 31px;
-        height: 4px;
-        background-color: #99E2D0;;
-    }
+            display: flex;
+            justify-items: center;
+            justify-content: center;
+        }
+    
+        .logo img {
+            width: 250px;
+            margin: 30px 0 30px 0;
+        }
+    
+        .back-icon {
+            position: absolute;
+            width: 40px;
+            top: 13px;
+            right: 93%;
+        }
+    
+        .ground-top {
+            margin: inherit;
+            height: 235px;
+        }
+    
+        .image1 {
+            height: 440px;
+            background-size: 100%;
+            background-position: center 58%;
+        }
+    
+        h1 {
+            font-size: 34px;
+            font-family: var(--font-logo);
+        }
+    
+        .title-main h2 {
+            font-size: 20px;
+        }
+    
+        .button1 button {
+            width: 69%;
+            height: 65px;
+            border-radius: 30px;
+        }
+    
+        .restaurants_fonctionnement h2 {
+            font-size: 28px;
+            position: absolute;
+            margin: 91px 0px 0px 151px;
+        }
+    
+        .title-restaurants {
+            font-size: 48px;
+        }
+    
+        a {
+            text-decoration: none;
+            color: inherit;
+            width: 42%;
+            height: 42%;
+        }
+    
+        /* Nouveau style pour les cartes en grille */
+    
+        .restaurants {
+            width: 70%;
+            height: 1520px;
+            display: flex;
+            padding: inherit;
+            margin: auto;
+            position: relative;
+            bottom: 51px;
+            border-radius: 30px 30px 0 0;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .titre {
+            margin: 51px 0PX 0px 0px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-weight: 100;
+        }
+    
+        .menu {
+            margin: 0px 0PX 0px 165px
+        }
+    
+        .plats {
+            margin: 55px 29px 23px;
+            font-weight: 300;
+            position: relative;
+            display: block;
+        }
+    
+        .plats::after {
+            content: '';
+            position: absolute;
+            left: 0px;
+            right: 245px;
+            top: 25px;
+            height: 4px;
+            background-color: var(--color-tertiary);
+        }
 
     .StyleCard {
         display: flex;
