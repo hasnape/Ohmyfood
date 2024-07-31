@@ -73,6 +73,31 @@ main {
     left: 76px;
 }
 
+.like {
+    width: 7%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 82%;
+    border: #2d2424;
+}
+
+.restaurants .like input[type="checkbox"] {
+    display: none;
+}
+
+.restaurants .like input[type="checkbox"]:checked+label {
+    background-image: url('/assets/Images et textes Ohmyfood/images/logo/Like.svg');
+}
+
+.restaurants .like label {
+    display: block;
+    width: 32px;
+    height: 21.1px;
+    background-image: url('/assets/Images et textes Ohmyfood/images/logo/téléchargement.png');
+    background-size: cover;
+}
 /* Styles communs additionnels... */
 
 /* footer */
