@@ -319,25 +319,23 @@ a {
 
 @media (min-width: 1400px) {
 
+
+    header {
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+    }
+
     .logo img {
-        width: 80%;
-        max-width: 230px;
+        width: 250px;
+        margin: 30px 0 30px 0;
     }
 
-    .local {
-        box-shadow: none;
-    }
-
-    .ville {
-        font-size: 15px;
-        margin: 0;
-    }
-
-    .local svg {
+    .back-icon {
         position: relative;
-        left: auto;
-        bottom: 1px;
-        width: 15px;
+        width: 40px;
+        top: 13px;
+        right: 40rem;
     }
 
     .ground-top {
@@ -345,9 +343,15 @@ a {
         height: 235px;
     }
 
+    .image1 {
+        height: 440px;
+        background-size: 100%;
+        background-position: center 58%;
+    }
+
     h1 {
         font-size: 34px;
-        font-family: Shrikhand;
+        font-family: var(--font-logo);
     }
 
     .title-main h2 {
@@ -435,12 +439,12 @@ a {
 
     .restaurants {
         width: 70%;
-        height: 1570px;
+        height: 1440px;
         display: flex;
         padding: inherit;
         margin: auto;
         position: relative;
-        bottom: 58px;
+        bottom: 51px;
         border-radius: 30px 30px 0 0;
         flex-wrap: nowrap;
         flex-direction: column;
@@ -448,16 +452,35 @@ a {
     }
 
     .titre {
-        margin: 0px 0PX 0px 350px;
+        margin: 51px 0PX 0px 0px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-weight: 100;
     }
 
     .menu {
-        margin: 0px 0PX 0px 210px;
-
+        margin: 0px 0PX 0px 165px
     }
 
     .plats {
         margin: 59px 0 0 23px;
+        font-weight: 300;
+        position: relative;
+        display: inline-block;
+    }
+
+
+
+    .plats::after {
+        content: '';
+        position: absolute;
+        left: 0px;
+        right: 257px;
+        top: 31px;
+        height: 4px;
+        background-color: var(--color-tertiary);
     }
 
     .StyleCard {
@@ -467,21 +490,18 @@ a {
         background: #FFF;
         overflow: hidden;
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-        width: 210%;
-        height: 106px;
+        width: 230%;
+        height: 84px;
     }
 
 
     /* Style spécifique pour les icônes de coeur */
     .restaurants .like {
-        Width: 8%;
-        height: 6%;
-        left: 62%;
+        Width: 6%;
+        height: 5%;
+        left: 66%;
         bottom: 0%;
-        top: 32px;
-        display: flex;
-        align-content: flex-start;
-        align-items: flex-start;
+        top: 56px;
 
     }
 
@@ -495,8 +515,8 @@ a {
 
     .restaurants .like label {
         display: block;
-        width: 27px;
-        height: 26.1px;
+        width: 32px;
+        height: 30.1px;
         background-image: url('/assets/Images et textes Ohmyfood/images/logo/téléchargement.png');
         background-size: cover;
     }
@@ -505,35 +525,27 @@ a {
     /* Ajustement de la carte et de l'image */
     .card {
         width: 100%;
-        /* Les cartes prennent toute la largeur de leur cellule de grille */
         height: auto;
-        /* Hauteur automatique pour conserver les proportions */
         position: relative;
-        /* Nécessaire pour positionner les éléments internes */
     }
 
     .card-title {
         font-size: 20px;
-        /* Taille de la police pour le titre */
         margin-bottom: 0.3rem;
     }
 
     .card-subtitle {
         font-size: 16px;
-        /* Taille de la police pour le sous-titre */
         margin: 1px 0 15px 0;
         font-weight: 300;
     }
 
 
     .button1 {
-                position: relative;
-                    top: 42px;
-                    left: 196px;
-                }
+        position: relative;
+        top: 42px;
+        left: 196px;
     }
-
-
 
 
     /* footer */
@@ -542,9 +554,8 @@ a {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-        /* Ajoute un peu de padding pour l'espacement */
         height: 136px;
-        margin-top: 1510px;
+        margin-top: 1594px;
     }
 
     .footer .column {
@@ -566,9 +577,6 @@ a {
     .footer__svg {
         margin-right: 8px;
         width: 15px;
-
-
-        /* Ajoute un espace à droite des icônes SVG */
     }
 
     .footer p {
@@ -584,5 +592,6 @@ a {
         flex-direction: row;
         align-items: center;
         gap: 26px;
-    
+
+    }
 }
