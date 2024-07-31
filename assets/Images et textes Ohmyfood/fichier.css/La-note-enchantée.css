@@ -44,7 +44,7 @@ main {
     align-items: center;
 }
 
-.logo {
+.logo a {
         text-decoration: none;
         color: inherit;
         width: 42%;
