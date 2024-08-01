@@ -386,8 +386,8 @@ a {
 @media (min-width: 1400px) {
 
     .logo img {
-            width: 80%;
-            max-width: 230px;
+        width: 80%;
+        max-width: 230px;
     }
 
     .local {
@@ -428,22 +428,24 @@ a {
     .fonctionnement h2 {
         margin-left: 14rem;
         font-size: 28px;
-        margin: 50px 0px 15px 151px
+        margin: 50px 0px 15px 233px
     }
 
     .choix {
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 90px;
+        margin: 0 0 0 175px;
+        width: 80%;
+
     }
 
+
     .choix_button {
-        width: 26rem;
+    width: 100%;
         height: 84px;
         box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.1);
         font-size: 18px;
         font-weight: bold;
         margin: 20px 0 0 41px;
+    }
 
     }
 
@@ -456,17 +458,18 @@ a {
     }
 
     .choix li {
-        display: flex;
-        align-items: center;
-        margin-right: 0;
-        justify-content: flex-start;
+                display: flex;
+                    align-items: center;
+                    margin-right: 0;
+                    justify-content: flex-start;
+                    WIDTH: 100%;
     }
 
     /* Style pour les images du contenu fonctionnement */
     .choix .numero img {
-        width: 25px;
-        height: 30px;
-        margin: 0px 0px 0px 120px;
+        width: 71%;
+            height: 30px;
+            margin: 0px 0px 0px 150px;;
     }
 
     /* Style pour les numéros */
@@ -481,7 +484,7 @@ a {
     .restaurants_fonctionnement h2 {
         font-size: 28px;
         position: absolute;
-        margin: 91px 0px 0px 151px;
+        margin: 91px 0px 0px 233px;
     }
 
     .title-restaurants {
@@ -499,14 +502,14 @@ a {
 
     /* Nouveau style pour les cartes en grille */
     .restaurants {
-        gap: 50px;
+        gap: 25px;
         height: 800px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        padding: 50px 90px 0px 85px;
+        padding: 50px 140px 0px 140px;
         align-content: center;
-        justify-content: space-evenly;
+        justify-content: space-evenly
     }
 
     .StyleCard {
