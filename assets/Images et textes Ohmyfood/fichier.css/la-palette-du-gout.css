@@ -41,7 +41,7 @@ main {
 
 .logo {
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
 .logo a {
@@ -59,14 +59,12 @@ main {
     width: 30px;
     height: auto;
     margin: 10px 45px 5px 15px;
-    position: absolute;
-    top: 10px;
 }
 
 /* Style pour le logo principal */
 
 .main-logo {
-    width: 180px;
+    width: 150px;
     height: auto;
     margin: 20px 0 10px 0;
 }
@@ -79,6 +77,7 @@ main {
     background-position: center 100%;
     background-repeat: no-repeat
 }
+
 
 
 /* Titre principal */
@@ -95,13 +94,10 @@ main {
 }
 
 h1 {
-    Font-size: 26px;
-    font-weight: 100;
+    font-size: 23px;
+    font-weight: 700;
     margin: 20px 0 0;
-    /* padding: 0 23px; */
-    font-family: var(--font-logo);
-    margin: 15px;
-
+    padding: 0 23px;
 }
 
 .title-main h2 {
@@ -176,9 +172,6 @@ h1 {
     margin-top: 60px;
     height: 1115px;
     width: auto;
-    position: absolute;
-    top: 193px;
-    border-radius: 20px;
 }
 
 .restaurants_fonctionnement h2 {
@@ -241,8 +234,50 @@ a {
     color: inherit;
 }
 
+.nouveau {
+    background: var(--Primary, #99E2D0);
+    width: 22%;
+    height: 27px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    color: #008766;
+    position: absolute;
+    left: 70%;
+    font-size: 13px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0 0 0
+}
 
+/* Coeurs */
 
+.like {
+    width: 7%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 82%;
+    border: #2d2424;
+}
+
+.restaurants .like input[type="checkbox"] {
+    display: none;
+}
+
+.restaurants .like input[type="checkbox"]:checked+label {
+    background-image: url('assets/Images et textes Ohmyfood/images/logo/Like.svg');
+}
+
+.restaurants .like label {
+    display: block;
+    width: 32px;
+    height: 21.1px;
+    background-image: url('/assets/Images et textes Ohmyfood/images/logo/téléchargement.png');
+    background-size: cover;
+}
 
 /* footer */
 
@@ -360,7 +395,7 @@ a {
     }
 
     .menu {
-        margin: 0px 0PX 0px 200px
+        margin: 0px 0PX 0px 165px
     }
 
     .plats {
