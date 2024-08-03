@@ -41,38 +41,38 @@ main {
 
 .logo {
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
-         .logo a {
-             text-decoration: none;
-             color: inherit;
-             width: 42%;
-             height: 42%;
-             display: flex;
-             justify-content: center;
-         }
+.logo a {
+    text-decoration: none;
+    color: inherit;
+    width: 42%;
+    height: 42%;
+    display: flex;
+    justify-content: center;
+}
 
 /* Style pour l'image de la flèche de retour */
 
 .back-icon {
-    width: 30px;
+    width: 35px;
     height: auto;
-    margin: 10px 45px 5px 15px;
+    position: absolute;
+    top: 16px;
+    left: 9px;
 }
 
 /* Style pour le logo principal */
 
 .main-logo {
-    width: 150px;
-    height: auto;
-    margin: 20px 0 10px 0;
+    margin: 20px 0 20px 0;
 }
 
 .image1 {
     width: 100%;
     height: 233px;
-    background-image: url("/assets/Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-image: url("/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     background-size: 109%;
     background-position: center 100%;
     background-repeat: no-repeat
@@ -94,10 +94,10 @@ main {
 }
 
 h1 {
-    font-size: 23px;
-    font-weight: 700;
-    margin: 20px 0 0;
-    padding: 0 23px;
+    font-size: 25px;
+    font-weight: 100;
+    margin: 25px 0 0px 15px;
+    font-family: var(--font-logo);
 }
 
 .title-main h2 {
@@ -108,10 +108,9 @@ h1 {
 }
 
 .plats {
-    margin: 59px 0 0 23px;
+    margin: 30px 0 0 23px;
     font-weight: 300;
     position: relative;
-    display: inline-block;
 }
 
 
@@ -120,8 +119,8 @@ h1 {
     content: '';
     position: absolute;
     left: 0px;
-    right: 257px;
-    top: 31px;
+    right: 268px;
+    top: 23px;
     height: 4px;
     background-color: var(--color-tertiary);
 }
@@ -131,17 +130,19 @@ h1 {
 .button1 {
     display: flex;
     justify-content: center;
+    position: relative;
+    top: 40px;
 }
 
 /* Style du bouton */
 .button1 button {
     width: 70%;
     max-width: 300px;
-    height: 52px;
+    height: 55px;
     border-radius: 25px;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.25);
     color: white;
-    font-size: 1rem;
+    font-size: 15px;
     text-align: center;
     border: none;
     font-weight: 500;
@@ -168,10 +169,11 @@ h1 {
 /* Restaurants */
 .restaurants {
     background-color: #f6f6f6;
-    padding-top: 20px;
-    margin-top: 60px;
-    height: 1115px;
-    width: auto;
+    height: 1173px;
+    width: 100%;
+    position: absolute;
+    border-radius: 40px 40px 0 0;
+    top: 259px;
 }
 
 .restaurants_fonctionnement h2 {
@@ -195,7 +197,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     width: 91%;
-    height: 233px;
+    height: 73px;
     margin: 18px 15PX 0 15px;
 }
 
@@ -219,36 +221,19 @@ h1 {
 /* Styles pour les titres et sous-titres de cartes */
 .card-title {
     Margin-bottom: 0.3rem;
-    font-size: 18px;
+    font-size: 15px;
 
 }
 
 .card-subtitle {
-    font-size: 18px;
-    margin: 1px 0 15px 0;
+    font-size: 13px;
+    margin: 1px 0 5px 0;
     font-weight: 300;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-}
-
-.nouveau {
-    background: var(--Primary, #99E2D0);
-    width: 22%;
-    height: 27px;
-    border-radius: 2px;
-    display: flex;
-    align-items: center;
-    color: #008766;
-    position: absolute;
-    left: 70%;
-    font-size: 13px;
-    font-weight: 500;
-    justify-content: center;
-    align-items: center;
-    margin: 12px 0 0 0
 }
 
 /* Coeurs */
@@ -260,6 +245,7 @@ a {
     align-items: center;
     position: absolute;
     left: 82%;
+    top: 13px;
     border: #2d2424;
 }
 
@@ -268,14 +254,14 @@ a {
 }
 
 .restaurants .like input[type="checkbox"]:checked+label {
-    background-image: url('assets/Images et textes Ohmyfood/images/logo/Like.svg');
+    background-image: url('/assets/images/logo/Like.svg');
 }
 
 .restaurants .like label {
     display: block;
     width: 32px;
     height: 21.1px;
-    background-image: url('/assets/Images et textes Ohmyfood/images/logo/téléchargement.png');
+    background-image: url('/assets/logo/téléchargement.png');
     background-size: cover;
 }
 
@@ -283,11 +269,13 @@ a {
 
 .footer {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     background-color: #353535;
     color: #f6f6f6;
     padding-left: 20px;
+    position: relative;
     height: 173px;
+    top: 47rem;
 }
 
 .footer__logo {
@@ -305,7 +293,7 @@ a {
 
 /* bureau */
 
-@media (min-width: 1400px) {
+@media (min-width: 1024px) {
 
 
     header {
@@ -338,7 +326,7 @@ a {
     }
 
     h1 {
-        font-size: 34px;
+        font-size: 40px;
         font-family: var(--font-logo);
     }
 
@@ -350,39 +338,21 @@ a {
         width: 69%;
         height: 65px;
         border-radius: 30px;
+        font-size: 20px;
     }
 
-    .restaurants_fonctionnement h2 {
-        font-size: 28px;
-        position: absolute;
-        margin: 91px 0px 0px 151px;
-    }
-
-    .title-restaurants {
-        font-size: 48px;
-    }
-
-    a {
-        text-decoration: none;
-        color: inherit;
-        width: 42%;
-        height: 42%;
-    }
-
-    /* Nouveau style pour les cartes en grille */
+    /* cadre menu */
 
     .restaurants {
+        height: 1440px;
+        top: 32rem;
         width: 70%;
-        height: 1460px;
         display: flex;
-        padding: inherit;
-        margin: auto;
-        position: relative;
-        bottom: 51px;
         border-radius: 30px 30px 0 0;
-        flex-wrap: nowrap;
         flex-direction: column;
         align-items: flex-start;
+        position: absolute;
+        margin: 0 0 0 300px;
     }
 
     .titre {
@@ -403,14 +373,15 @@ a {
         font-weight: 300;
         position: relative;
         display: block;
+        font-size: 22px;
     }
 
     .plats::after {
         content: '';
         position: absolute;
         left: 0px;
-        right: 245px;
-        top: 25px;
+        right: 343px;
+        top: 30px;
         height: 4px;
         background-color: var(--color-tertiary);
     }
@@ -433,7 +404,7 @@ a {
         height: 5%;
         left: 66%;
         bottom: 0%;
-        top: 56px;
+        top: 75px;
 
     }
 
@@ -442,14 +413,14 @@ a {
     }
 
     .restaurants .like input[type="checkbox"]:checked+label {
-        background-image: url('/assets/Images et textes Ohmyfood/images/logo/Like.svg');
+        background-image: url('/assets/images/logo/Like.svg');
     }
 
     .restaurants .like label {
         display: block;
-        width: 32px;
-        height: 30.1px;
-        background-image: url('/assets/Images et textes Ohmyfood/images/logo/téléchargement.png');
+        width: 34px;
+        height: 32.1px;
+        background-image: url('/assets/images/logo/téléchargement.png');
         background-size: cover;
     }
 
@@ -462,12 +433,12 @@ a {
     }
 
     .card-title {
-        font-size: 20px;
+        font-size: 22px;
         margin-bottom: 0.3rem;
     }
 
     .card-subtitle {
-        font-size: 16px;
+        font-size: 22px;
         margin: 1px 0 15px 0;
         font-weight: 300;
     }
@@ -475,8 +446,8 @@ a {
 
     .button1 {
         position: relative;
-        top: 42px;
-        left: 196px;
+        top: 35px;
+        left: 330px;
     }
 
 
@@ -487,7 +458,7 @@ a {
         justify-content: flex-end;
         align-items: flex-end;
         height: 136px;
-        margin-top: 1618px;
+        margin-top: 866px;
     }
 
     .footer .column {

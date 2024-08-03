@@ -72,7 +72,7 @@ main {
 .image1 {
     width: 100%;
     height: 233px;
-    background-image: url("/assets/Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-image: url("/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     background-size: 109%;
     background-position: center 100%;
     background-repeat: no-repeat
@@ -254,14 +254,14 @@ a {
 }
 
 .restaurants .like input[type="checkbox"]:checked+label {
-    background-image: url('/assets/Images et textes Ohmyfood/images/logo/Like.svg');
+    background-image: url('/assets/images/logo/Like.svg');
 }
 
 .restaurants .like label {
     display: block;
     width: 32px;
     height: 21.1px;
-    background-image: url('/assets/Images et textes Ohmyfood/images/logo/téléchargement.png');
+    background-image: url('/assets/images/logo/téléchargement.png');
     background-size: cover;
 }
 
@@ -293,7 +293,7 @@ a {
 
 /* bureau */
 
-@media (min-width: 1400px) {
+@media (min-width: 1024px) {
 
 
     header {
@@ -344,15 +344,15 @@ a {
     /* cadre menu */
 
     .restaurants {
-            height: 1440px;
-            top: 32rem;
-            width: 70%;
-            display: flex;
-            border-radius: 30px 30px 0 0;
-            flex-direction: column;
-            align-items: flex-start;
-            position: absolute;
-            margin: 0 0 0 300px;
+        height: 1440px;
+        top: 32rem;
+        width: 70%;
+        display: flex;
+        border-radius: 30px 30px 0 0;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        margin: 0 0 0 300px;
     }
 
     .titre {
@@ -413,14 +413,14 @@ a {
     }
 
     .restaurants .like input[type="checkbox"]:checked+label {
-        background-image: url('/assets/Images et textes Ohmyfood/images/logo/Like.svg');
+        background-image: url('/assets/images/logo/Like.svg');
     }
 
     .restaurants .like label {
         display: block;
         width: 34px;
         height: 32.1px;
-        background-image: url('/assets/Images et textes Ohmyfood/images/logo/téléchargement.png');
+        background-image: url('/assets/images/logo/téléchargement.png');
         background-size: cover;
     }
 
