@@ -12,8 +12,6 @@
     --grey: #2d2424;
     --grey-2: #efefef;
     --button-gradient: linear-gradient(13deg, #9356DC -12.44%, #FF79DA 115.93%);
-
-    --carte-resto: height: 200px, width: 100%;
 }
 
 
@@ -353,11 +351,12 @@ a {
     display: block;
         width: 29px;
         height: 27.1px;
-        background-image: url(/assets/images/logo/téléchargement.png);
+        background-image: url('/assets/images/logo/téléchargement.png');
         background-size: cover;
         position: absolute;
         bottom: 99px;
     }
+
 /* footer */
 
 .footer {
