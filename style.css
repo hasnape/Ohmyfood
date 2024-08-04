@@ -588,6 +588,7 @@ a {
     }
 
     /* Style spécifique pour le badge "Nouveau" */
+
     .nouveau {
         background: var(--Primary, #99E2D0);
         width: 15%;
@@ -605,30 +606,8 @@ a {
         box-sizing: border-box;
         border-radius: 3px;
     }
-
-    /* Style spécifique pour les icônes de coeur */
-    .like {
-        Width: 72%;
-        height: 30%;
-        left: 85%;
-        bottom: 2%;
-        margin-right: 0;
-
-    }
-
-    .like input[type="checkbox"] {
-        display: none;
-    }
-
-    .like input[type="checkbox"]:checked+label {
-        background-image: url('assets/images/logo/Like.svg');
-    }
-
-
-    .restaurants .like label {
-        height: 31%;
-    }
-
+    
+   
     /* Ajustement de la carte et de l'image */
     .card {
         width: 100%;
@@ -652,6 +631,33 @@ a {
         font-weight: 300;
     }
 
+.like {
+    width: 7%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 82%;
+    border: #2d2424;
+}
+
+.restaurants .like input[type="checkbox"] {
+    display: none;
+}
+
+.restaurants .like input[type="checkbox"]:checked+label {
+    background-image: url('/assets/images/logo/Like.svg');
+}
+
+.restaurants .like label {
+    display: block;
+    width: 29px;
+    height: 27.1px;
+    background-image: url('/assets/images/logo/téléchargement.png');
+    background-size: cover;
+    position: absolute;
+    bottom: 99px;
+}
 
     /* footer */
 
