@@ -349,13 +349,13 @@ a {
 
 .restaurants .like label {
     display: block;
-        width: 29px;
-        height: 27.1px;
-        background-image: url('/assets/images/logo/téléchargement.png');
-        background-size: cover;
-        position: absolute;
-        bottom: 99px;
-    }
+    width: 29px;
+    height: 27.1px;
+    background-image: url('/assets/images/logo/téléchargement.png');
+    background-size: cover;
+    position: absolute;
+    bottom: 99px;
+}
 
 /* footer */
 
@@ -440,7 +440,7 @@ a {
 
 
     .choix_button {
-    width: 100%;
+        width: 100%;
         height: 84px;
         box-shadow: 7px 7px 9px 0px rgba(0, 0, 0, 0.1);
         font-size: 18px;
@@ -457,18 +457,19 @@ a {
     }
 
     .choix li {
-                display: flex;
-                    align-items: center;
-                    margin-right: 0;
-                    justify-content: flex-start;
-                    WIDTH: 100%;
+        display: flex;
+        align-items: center;
+        margin-right: 0;
+        justify-content: flex-start;
+        WIDTH: 100%;
     }
 
     /* Style pour les images du contenu fonctionnement */
     .choix .numero img {
         width: 71%;
-            height: 30px;
-            margin: 0px 0px 0px 150px;;
+        height: 30px;
+        margin: 0px 0px 0px 150px;
+        ;
     }
 
     /* Style pour les numéros */
@@ -501,14 +502,14 @@ a {
 
     /* Nouveau style pour les cartes en grille */
     .restaurants {
-        gap: 25px;
+        gap: 52px;
         height: 800px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        padding: 50px 140px 0px 140px;
+        padding: 50px 113px 0px 206px;
         align-content: center;
-        justify-content: space-evenly
+        justify-content: space-evenly;
     }
 
     .StyleCard {
@@ -606,8 +607,8 @@ a {
         box-sizing: border-box;
         border-radius: 3px;
     }
-    
-   
+
+
     /* Ajustement de la carte et de l'image */
     .card {
         width: 100%;
@@ -631,33 +632,18 @@ a {
         font-weight: 300;
     }
 
-.like {
-    width: 7%;
-    height: 4rem;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: 82%;
-    border: #2d2424;
-}
+    /* Coeur */
 
-.restaurants .like input[type="checkbox"] {
-    display: none;
-}
-
-.restaurants .like input[type="checkbox"]:checked+label {
-    background-image: url('/assets/images/logo/Like.svg');
-}
-
-.restaurants .like label {
-    display: block;
-    width: 29px;
-    height: 27.1px;
-    background-image: url('/assets/images/logo/téléchargement.png');
-    background-size: cover;
-    position: absolute;
-    bottom: 99px;
-}
+    .like {
+        width: 0%;
+        height: 9rem;
+        position: relative;
+        left: -7%;
+        top: 29%;
+        right: 0px;
+        display: flex;
+        justify-content: flex-end;
+    }
 
     /* footer */
 
