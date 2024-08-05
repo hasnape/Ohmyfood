@@ -385,9 +385,9 @@ a {
     .restaurants .like {
         width: 6%;
         height: 5%;
-        left: 66%;
+        left: 67%;
         bottom: 0%;
-        top: 75px;
+        top: 4.8%;
     }
 
     .restaurants .like input[type="checkbox"] {
