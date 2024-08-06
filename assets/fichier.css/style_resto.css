@@ -424,6 +424,48 @@ a {
         font-weight: 300;
     }
 
+    /* Animation prix  */
+
+
+    .price-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transition: transform 0.3s ease;
+        padding: 0 10px;
+    }
+
+    .price {
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    .reveal {
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .reveal .arrow {
+        width: 24px;
+        height: 24px;
+        fill: #fff;
+    }
+
+    .StyleCard:hover .price-container {
+        transform: translateX(-20px);
+    }
+
+    .StyleCard:hover .reveal {
+        display: flex;
+    }
+
+    /* Bouton */
+
     .button1 {
         position: relative;
         top: 35px;
