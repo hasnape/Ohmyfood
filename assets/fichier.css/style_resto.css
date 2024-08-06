@@ -426,42 +426,155 @@ a {
 
     /* Animation prix  */
 
-
-    .price-container {
+    .price-container1 {
         position: absolute;
-        top: 0;
-        right: 0;
-        height: 100%;
+        top: 19.3%;
+        right: 8%;
         display: flex;
         align-items: center;
         transition: transform 0.3s ease;
-        padding: 0 10px;
     }
+
+    .StyleCard:hover .price-container1 {
+        transform: translateX(-65px);
+    }
+
+    .price-container2 {
+        position: absolute;
+        top: 26.3%;
+        right: 8%;
+        display: flex;
+        align-items: center;
+        transition: transform 0.3s ease;
+    }
+
+.StyleCard:hover .price-container2 {
+    transform: translateX(-65px);
+}
+
+ .price-container3 {
+     position: absolute;
+     top: 33.4%;
+     right: 8%;
+     display: flex;
+     align-items: center;
+     transition: transform 0.3s ease;
+ }
+
+ .StyleCard:hover .price-container3 {
+     transform: translateX(-65px);
+ }
+
+ .price-container4 {
+     position: absolute;
+     top: 46.5%;
+     right: 8%;
+     display: flex;
+     align-items: center;
+     transition: transform 0.3s ease;
+ }
+
+ .StyleCard:hover .price-container4 {
+     transform: translateX(-65px);
+ }
+
+ .price-container5 {
+     position: absolute;
+     top: 53.6%;
+     right: 8%;
+     display: flex;
+     align-items: center;
+     transition: transform 0.3s ease;
+ }
+
+ .StyleCard:hover .price-container5 {
+     transform: translateX(-65px);
+ }
+
+ .price-container6 {
+     position: absolute;
+     top: 60.7%;
+     right: 8%;
+     display: flex;
+     align-items: center;
+     transition: transform 0.3s ease;
+ }
+
+ .StyleCard:hover .price-container6 {
+     transform: translateX(-65px);
+ }
+
+.price-container7 {
+    position: absolute;
+    top: 73.8%;
+    right: 8%;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.StyleCard:hover .price-container7 {
+    transform: translateX(-65px);
+}
+
+
+.price-container8 {
+    position: absolute;
+    top: 80.9%;
+    right: 8%;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.StyleCard:hover .price-container8 {
+    transform: translateX(-65px);
+}
+
+.price-container9 {
+    position: absolute;
+    top: 88%;
+    right: 8%;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.StyleCard:hover .price-container9 {
+    transform: translateX(-65px);
+}
+
+/* generale pour la transition dans les carte  */
 
     .price {
         font-size: 16px;
         font-weight: bold;
-        margin-right: 10px;
+        position: relative;
+        right: 6px;
+
     }
 
     .reveal {
         display: none;
         align-items: center;
         justify-content: center;
+
     }
 
-    .reveal .arrow {
-        width: 24px;
-        height: 24px;
-        fill: #fff;
-    }
-
-    .StyleCard:hover .price-container {
-        transform: translateX(-20px);
+    .reveal svg {
+        width: 94px;
+        height: 85px;
+        position: relative;
+        margin: 0 0 0 18px;
+        bottom: 22px;
     }
 
     .StyleCard:hover .reveal {
         display: flex;
+        position: absolute;
+        display: flex;
+        align-items: base;
+        transition: transform 0.3s ease;
     }
 
     /* Bouton */
