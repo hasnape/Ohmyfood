@@ -1,0 +1,572 @@
+$color_1: inherit;
+$color_2: var(--grey);
+$color_3: white;
+$color_4: var(--Grey, #353535);
+$color_5: #f6f6f6;
+$font-family_1: var(--font-text);
+$font-family_2: var(--font-logo);
+$background-color_1: var(--color-tertiary);
+$background-color_2: #f6f6f6;
+$background-color_3: #353535;
+
+/* Import des polices */
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap";
+/* Variables CSS */
+/* Styles globaux et éléments communs */
+/* Ground top */
+/* Logo */
+/* Style pour l'image de la flèche de retour */
+/* Style pour le logo principal */
+/* Titre principal */
+/* Bouton principal */
+/* Style du bouton */
+/* Effet de surbrillance au survol */
+/* Fonctionnement */
+/* Restaurants */
+/* Styles pour les cartes */
+/* Styles pour le contenu de la carte */
+/* Styles pour les titres et sous-titres de cartes */
+/* Coeurs */
+/* footer */
+/* bureau */
+/* cadre menu */
+/* Style spécifique pour les icônes de coeur */
+/* Ajustement de la carte et de l'image */
+/* Animation prix */
+/* Styles de transition au survol */
+/* Générale pour la transition dans les cartes */
+/* Bouton */
+/* footer */
+&:root {
+	--font-logo: 'Shrikhand', cursive;
+	--font-text: 'Roboto', sans-serif;
+	--color-primary: #9356DC;
+	--color-secondary: #FF79DA;
+	--color-tertiary: #99E2D0;
+	--grey: #2d2424;
+	--grey-2: #efefef;
+	--button-gradient: linear-gradient(13deg, #9356DC -12.44%, #FF79DA 115.93%);
+	--carte-resto: height: 200px, width: 100%;
+}
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: $font-family_1;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: $font-family_1;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+main {
+	flex: 1;
+}
+.ground-top {
+	height: 158px;
+	width: 100%;
+}
+.logo {
+	display: flex;
+	justify-content: center;
+	a {
+		text-decoration: none;
+		color: $color_1;
+		width: 42%;
+		height: 42%;
+		display: flex;
+		justify-content: center;
+	}
+}
+.back-icon {
+	width: 35px;
+	height: auto;
+	position: absolute;
+	top: 16px;
+	left: 9px;
+}
+.main-logo {
+	margin: 20px 0 20px 0;
+}
+.image1 {
+	width: 100%;
+	height: 233px;
+	background-image: url("/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+	background-size: 109%;
+	background-position: center 100%;
+	background-repeat: no-repeat;
+}
+.title-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h2 {
+		text-align: center;
+		font-family: $font-family_1;
+		color: $color_2;
+		font-size: 16px;
+		font-weight: 300;
+		margin: 10px 0px 25px 0px;
+		padding: 0px 20px;
+	}
+}
+h1 {
+	font-size: 25px;
+	font-weight: 100;
+	margin: 25px 0 0px 15px;
+	font-family: $font-family_2;
+}
+.plats {
+	margin: 30px 0 0 23px;
+	font-weight: 300;
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0px;
+		right: 268px;
+		top: 23px;
+		height: 4px;
+		background-color: $background-color_1;
+	}
+}
+.button1 {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: 40px;
+	button {
+		width: 70%;
+		max-width: 300px;
+		height: 55px;
+		border-radius: 25px;
+		box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.25);
+		color: $color_3;
+		font-size: 15px;
+		text-align: center;
+		border: none;
+		font-weight: 500;
+		background: var(--button-gradient);
+		transition: filter 0.3s;
+		&:hover {
+			filter: brightness(1.15);
+			box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.30);
+		}
+	}
+}
+.fonctionnement {
+	h2 {
+		font-size: 25px;
+		margin: 40px 0 0 20px;
+	}
+	width: 100%;
+}
+.restaurants {
+	background-color: $background-color_2;
+	height: 1173px;
+	width: 100%;
+	position: absolute;
+	border-radius: 40px 40px 0 0;
+	top: 259px;
+	.like {
+		input[type="checkbox"] {
+			display: none;
+			&:checked+label {
+				background-image: url('/assets/images/logo/Like.svg');
+			}
+		}
+		label {
+			display: block;
+			width: 32px;
+			height: 21.1px;
+			background-image: url('/assets/images/logo/téléchargement.png');
+			background-size: cover;
+		}
+	}
+}
+.restaurants_fonctionnement {
+	h2 {
+		font-size: 22px;
+		margin: 23px 0 0 21px;
+	}
+}
+.title-restaurants {
+	color: $color_4;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 300;
+	margin-top: 27px;
+}
+.StyleCard {
+	border-radius: 1.25rem;
+	background: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 91%;
+	height: 73px;
+	margin: 18px 15px 0 15px;
+}
+.card {
+	width: 300px;
+	height: 200px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+}
+.card-content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	align-self: stretch;
+	padding-left: 20px;
+}
+.card-title {
+	margin-bottom: 0.3rem;
+	font-size: 15px;
+}
+.card-subtitle {
+	font-size: 13px;
+	margin: 1px 0 5px 0;
+	font-weight: 300;
+}
+a {
+	text-decoration: none;
+	color: $color_1;
+}
+.like {
+	width: 7%;
+	height: 4rem;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	left: 82%;
+	top: 13px;
+	border: #2d2424;
+}
+.footer {
+	display: flex;
+	align-items: stretch;
+	background-color: $background-color_3;
+	color: $color_5;
+	padding-left: 20px;
+	position: relative;
+	height: 173px;
+	top: 47rem;
+	p {
+		font-size: 16px;
+		margin: 9px 0 0px 0px;
+	}
+}
+.footer__logo {
+	margin-top: 20px;
+}
+.footer__svg {
+	margin: 0px 4px 0 0;
+}
+@media (min-width: 1024px) {
+	header {
+		display: flex;
+		justify-items: center;
+		justify-content: center;
+	}
+	.logo {
+		img {
+			width: 250px;
+			margin: 30px 0 30px 0;
+		}
+	}
+	.back-icon {
+		position: absolute;
+		width: 2%;
+		top: 30px;
+		right: 93%;
+	}
+	.ground-top {
+		margin: inherit;
+		height: 235px;
+	}
+	.image1 {
+		height: 440px;
+		background-size: 100%;
+		background-position: center 58%;
+	}
+	h1 {
+		font-size: 40px;
+		font-family: $font-family_2;
+	}
+	.title-main {
+		h2 {
+			font-size: 20px;
+		}
+	}
+	.button1 {
+		button {
+			width: 69%;
+			height: 65px;
+			border-radius: 30px;
+			font-size: 20px;
+		}
+		position: relative;
+		top: 35px;
+		left: 295px;
+	}
+	.restaurants {
+		height: 1440px;
+		top: 32rem;
+		width: 70%;
+		display: flex;
+		border-radius: 30px 30px 0 0;
+		flex-direction: column;
+		align-items: flex-start;
+		position: absolute;
+		margin: 0 0 0 300px;
+		.like {
+			width: 6%;
+			height: 5%;
+			left: 67%;
+			bottom: 0%;
+			top: 4.8%;
+			input[type="checkbox"] {
+				display: none;
+				&:checked+label {
+					background-image: url('/assets/images/logo/Like.svg');
+				}
+			}
+			label {
+				display: block;
+				width: 34px;
+				height: 32.1px;
+				background-image: url('/assets/images/logo/téléchargement.png');
+				background-size: cover;
+			}
+		}
+	}
+	.titre {
+		margin: 51px 0PX 0px 0px;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		font-weight: 100;
+	}
+	.menu {
+		margin: 0px 0PX 0px 165px;
+	}
+	.plats {
+		margin: 55px 29px 23px;
+		font-weight: 300;
+		position: relative;
+		display: block;
+		font-size: 22px;
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0px;
+			right: 343px;
+			top: 30px;
+			height: 4px;
+			background-color: $background-color_1;
+		}
+	}
+	.StyleCard {
+		width: 240%;
+		height: 84px;
+		display: flex;
+		align-content: flex-start;
+		border-radius: 1.25rem;
+		background: #FFF;
+		overflow: hidden;
+		box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+		position: relative;
+		&:hover {
+			.price-container1 {
+				transform: translateX(84%);
+			}
+			.price-container2 {
+				transform: translateX(84%);
+			}
+			.price-container3 {
+				transform: translateX(84%);
+			}
+			.price-container4 {
+				transform: translateX(84%);
+			}
+			.price-container5 {
+				transform: translateX(84%);
+			}
+			.price-container6 {
+				transform: translateX(84%);
+			}
+			.price-container7 {
+				transform: translateX(84%);
+			}
+			.price-container8 {
+				transform: translateX(84%);
+			}
+			.price-container9 {
+				transform: translateX(84%);
+			}
+			.reveal {
+				display: flex;
+				position: absolute;
+				align-items: base;
+				transition: transform 2s ease-in-out;
+			}
+		}
+	}
+	.card {
+		width: 100%;
+		height: auto;
+		position: relative;
+	}
+	.card-title {
+		font-size: 25px;
+		margin-bottom: 0.3rem;
+	}
+	.card-subtitle {
+		font-size: 19px;
+		font-weight: 300;
+	}
+	.price-container1 {
+		position: absolute;
+		right: 35px;
+		display: flex;
+		align-items: center;
+		transform: translateX(290%);
+		transition: transform 200ms ease-in-out;
+		top: 45%;
+	}
+	.price-container2 {
+		position: absolute;
+		right: 35px;
+		display: flex;
+		align-items: center;
+		transform: translateX(290%);
+		transition: transform 200ms ease-in-out;
+		top: 47%;
+	}
+	.price-container3 {
+		position: absolute;
+		right: 35px;
+		display: flex;
+		align-items: center;
+		transform: translateX(290%);
+		transition: transform 200ms ease-in-out;
+		top: 45%;
+	}
+	.price-container4 {
+		position: absolute;
+		right: 35px;
+		display: flex;
+		align-items: center;
+		transform: translateX(290%);
+		transition: transform 200ms ease-in-out;
+		top: 46.5%;
+	}
+	.price-container5 {
+		position: absolute;
+		right: 35px;
+		display: flex;
+		align-items: center;
+		transform: translateX(290%);
+		transition: transform 200ms ease-in-out;
+		top: 47%;
+	}
+	.price-container6 {
+		position: absolute;
+		right: 35px;
+		display: flex;
+		align-items: center;
+		transform: translateX(290%);
+		transition: transform 200ms ease-in-out;
+		top: 47%;
+	}
+	.price-container7 {
+		position: absolute;
+		right: 35px;
+		display: flex;
+		align-items: center;
+		transform: translateX(290%);
+		transition: transform 200ms ease-in-out;
+		top: 47%;
+	}
+	.price-container8 {
+		position: absolute;
+		right: 35px;
+		display: flex;
+		align-items: center;
+		transform: translateX(290%);
+		transition: transform 200ms ease-in-out;
+		top: 47%;
+	}
+	.price-container9 {
+		position: absolute;
+		right: 35px;
+		display: flex;
+		align-items: center;
+		transform: translateX(290%);
+		transition: transform 200ms ease-in-out;
+		top: 45%;
+	}
+	.price {
+		font-size: 16px;
+		font-weight: bold;
+		position: relative;
+		right: 78px;
+	}
+	.reveal {
+		display: none;
+		align-items: center;
+		justify-content: center;
+		svg {
+			width: 94px;
+			height: 85px;
+			position: relative;
+			bottom: 22px;
+			right: 45px;
+		}
+	}
+	.footer {
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		height: 136px;
+		margin-top: 866px;
+		.column {
+			display: flex;
+			align-items: center;
+			gap: 13px;
+			margin: 0px 301px 35px 0px;
+		}
+		p {
+			display: flex;
+			align-items: center;
+			margin: 0;
+			font-size: 18px;
+		}
+		.soloP {
+			margin-left: 69px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 26px;
+		}
+	}
+	.footer__logo {
+		margin: 0 0px 0 780px;
+		width: 135px;
+		position: absolute;
+	}
+	.footer__svg {
+		margin-right: 8px;
+		width: 15px;
+	}
+}
