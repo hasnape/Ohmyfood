@@ -309,8 +309,8 @@ a {
 
     .back-icon {
         position: absolute;
-        width: 40px;
-        top: 13px;
+        width: 2%;
+        top: 33px;
         right: 93%;
     }
 
@@ -344,7 +344,7 @@ a {
     /* cadre menu */
 
     .restaurants {
-        height: 1440px;
+        height: 1544px;
         top: 32rem;
         width: 70%;
         display: flex;
@@ -387,24 +387,26 @@ a {
     }
 
     .StyleCard {
+        width: 241%;
+        height: 84px;
         display: flex;
         align-content: flex-start;
         border-radius: 1.25rem;
         background: #FFF;
         overflow: hidden;
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-        width: 230%;
-        height: 84px;
+        position: relative;
     }
 
 
     /* Style spécifique pour les icônes de coeur */
+
     .restaurants .like {
         Width: 6%;
         height: 5%;
-        left: 66%;
+        left: 67%;
         bottom: 0%;
-        top: 75px;
+        top: 65px;
 
     }
 
@@ -438,7 +440,7 @@ a {
     }
 
     .card-subtitle {
-        font-size: 22px;
+        font-size: 18px;
         margin: 1px 0 15px 0;
         font-weight: 300;
     }
@@ -451,6 +453,114 @@ a {
     }
 
 
+    /* Animation prix  */
+
+
+    .price-container1,
+    .price-container2,
+    .price-container3,
+    .price-container4,
+    .price-container5,
+    .price-container6,
+    .price-container7,
+    .price-container8,
+    .price-container9,
+    .price-container10 {
+        position: absolute;
+        right: 35px;
+        /* Position initiale juste à l'intérieur de .StyleCard */
+        display: flex;
+        align-items: center;
+        transform: translateX(290%);
+        /* Position initiale hors du côté visible à droite */
+        transition: transform 200ms ease-in-out;
+        /* Transition fluide */
+    }
+
+    .price-container1 {
+        top: 47%;
+    }
+
+    .price-container2 {
+        top: 47%;
+    }
+
+    .price-container3 {
+        top: 47%;
+    }
+
+    .price-container4 {
+        top: 47%;
+    }
+
+    .price-container5 {
+        top: 47%;
+    }
+
+    .price-container6 {
+        top: 47%;
+    }
+
+    .price-container7 {
+        top: 47%;
+    }
+
+    .price-container8 {
+        top: 47%;
+    }
+
+    .price-container9 {
+        top: 47%;
+    }
+
+    .price-container10 {
+        top: 47%;
+    }
+
+    /* Styles de transition au survol */
+    .StyleCard:hover .price-container1,
+    .StyleCard:hover .price-container2,
+    .StyleCard:hover .price-container3,
+    .StyleCard:hover .price-container4,
+    .StyleCard:hover .price-container5,
+    .StyleCard:hover .price-container6,
+    .StyleCard:hover .price-container7,
+    .StyleCard:hover .price-container8,
+    .StyleCard:hover .price-container9,
+    .StyleCard:hover .price-container10 {
+        transform: translateX(84%);
+        /* Glissement vers la position finale visible */
+    }
+
+    /* Générale pour la transition dans les cartes */
+    .price {
+        font-size: 16px;
+        font-weight: bold;
+        position: relative;
+        right: 78px;
+    }
+
+    .reveal {
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .reveal svg {
+        width: 94px;
+        height: 85px;
+        position: relative;
+        bottom: 22px;
+        right: 45px;
+    }
+
+    .StyleCard:hover .reveal {
+        display: flex;
+        position: absolute;
+        align-items: base;
+        transition: transform 2s ease-in-out;
+    }
+
     /* footer */
 
     .footer {
@@ -458,7 +568,7 @@ a {
         justify-content: flex-end;
         align-items: flex-end;
         height: 136px;
-        margin-top: 866px;
+        margin-top: 965px;
     }
 
     .footer .column {
