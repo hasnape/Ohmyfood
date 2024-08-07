@@ -88,9 +88,9 @@ main {
 }
 
 h1 {
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 100;
-    margin: 25px 0 0px 15px;
+    margin: 28px 0 0px 15px;
     font-family: var(--font-logo);
 }
 
@@ -160,7 +160,7 @@ h1 {
 /* Restaurants */
 .restaurants {
     background-color: #f6f6f6;
-    height: 1173px;
+    height: 1051px;
     width: 100%;
     position: absolute;
     border-radius: 40px 40px 0 0;
@@ -188,7 +188,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     width: 91%;
-    height: 73px;
+    height: 62px;
     margin: 18px 15px 0 15px;
 }
 
@@ -206,7 +206,7 @@ h1 {
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 /* Styles pour les titres et sous-titres de cartes */
@@ -216,8 +216,8 @@ h1 {
 }
 
 .card-subtitle {
-    font-size: 13px;
-    margin: 1px 0 5px 0;
+    font-size: 11px;
+    margin: 1px 0 0px 0;
     font-weight: 300;
 }
 
@@ -254,7 +254,39 @@ a {
     background-size: cover;
 }
 
+/* Animation prix  */
+
+.price-container1,
+.price-container2,
+.price-container3,
+.price-container4,
+.price-container5,
+.price-container6,
+.price-container7,
+.price-container8,
+.price-container9,
+.price-container10 {
+    right: 35px;
+    transform: translateX(290%);
+}
+
+
+.price {
+    font-size: 13px;
+    font-weight: bold;
+    position: relative;
+    left: 174px;
+    bottom: 67%;
+}
+
+.reveal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
 /* footer */
+
 .footer {
     display: flex;
     align-items: stretch;
@@ -262,8 +294,8 @@ a {
     color: #f6f6f6;
     padding-left: 20px;
     position: relative;
-    height: 173px;
-    top: 47rem;
+    height: 165px;
+    top: 39rem;
 }
 
 .footer__logo {
@@ -278,6 +310,8 @@ a {
     font-size: 16px;
     margin: 9px 0 0px 0px;
 }
+
+
 
 /* bureau */
 @media (min-width: 1024px) {
@@ -424,107 +458,116 @@ a {
         font-weight: 300;
     }
 
-  /* Animation prix */
+    /* Animation prix  */
 
-  .price-container1,
-  .price-container2,
-  .price-container3,
-  .price-container4,
-  .price-container5,
-  .price-container6,
-  .price-container7,
-  .price-container8,
-  .price-container9 {
-      position: absolute;
-      right: 35px;
-      /* Position initiale juste à l'intérieur de .StyleCard */
-      display: flex;
-      align-items: center;
-      transform: translateX(290%);
-      /* Position initiale hors du côté visible à droite */
-      transition: transform 200ms ease-in-out;
-      /* Transition fluide */
-  }
 
-  .price-container1 {
-      top: 45%;
-  }
+    .price-container1,
+    .price-container2,
+    .price-container3,
+    .price-container4,
+    .price-container5,
+    .price-container6,
+    .price-container7,
+    .price-container8,
+    .price-container9,
+    .price-container10 {
+        position: absolute;
+        right: 35px;
+        /* Position initiale juste à l'intérieur de .StyleCard */
+        display: flex;
+        align-items: center;
+        transform: translateX(290%);
+        /* Position initiale hors du côté visible à droite */
+        transition: transform 200ms ease-in-out;
+        /* Transition fluide */
+    }
 
-  .price-container2 {
-      top: 47%;
-  }
+    .price-container1 {
+        top: 47%;
+    }
 
-  .price-container3 {
-      top: 45%;
-  }
+    .price-container2 {
+        top: 47%;
+    }
 
-  .price-container4 {
-      top: 46.5%;
-  }
+    .price-container3 {
+        top: 47%;
+    }
 
-  .price-container5 {
-      top: 47%;
-  }
+    .price-container4 {
+        top: 47%;
+    }
 
-  .price-container6 {
-      top: 47%;
-  }
+    .price-container5 {
+        top: 47%;
+    }
 
-  .price-container7 {
-      top: 47%;
-  }
+    .price-container6 {
+        top: 47%;
+    }
 
-  .price-container8 {
-      top: 47%;
-  }
+    .price-container7 {
+        top: 47%;
+    }
 
-  .price-container9 {
-      top: 45%;
-  }
+    .price-container8 {
+        top: 47%;
+    }
 
-  /* Styles de transition au survol */
-  .StyleCard:hover .price-container1,
-  .StyleCard:hover .price-container2,
-  .StyleCard:hover .price-container3,
-  .StyleCard:hover .price-container4,
-  .StyleCard:hover .price-container5,
-  .StyleCard:hover .price-container6,
-  .StyleCard:hover .price-container7,
-  .StyleCard:hover .price-container8,
-  .StyleCard:hover .price-container9 {
-      transform: translateX(84%);
-      /* Glissement vers la position finale visible */
-  }
+    .price-container9 {
+        top: 47%;
+    }
 
-  /* Générale pour la transition dans les cartes */
-  .price {
-      font-size: 16px;
-      font-weight: bold;
-      position: relative;
-      right: 78px;
-  }
+    .price-container10 {
+        top: 47%;
+    }
 
-  .reveal {
-      display: none;
-      align-items: center;
-      justify-content: center;
-  }
+    /* Styles de transition au survol */
+    .StyleCard:hover .price-container1,
+    .StyleCard:hover .price-container2,
+    .StyleCard:hover .price-container3,
+    .StyleCard:hover .price-container4,
+    .StyleCard:hover .price-container5,
+    .StyleCard:hover .price-container6,
+    .StyleCard:hover .price-container7,
+    .StyleCard:hover .price-container8,
+    .StyleCard:hover .price-container9,
+    .StyleCard:hover .price-container10 {
+        transform: translateX(84%);
+        /* Glissement vers la position finale visible */
+    }
 
-  .reveal svg {
-      width: 94px;
-      height: 85px;
-      position: relative;
-      bottom: 22px;
-      right: 45px;
-  }
+    /* Générale pour la transition dans les cartes */
+    .price {
+        font-size: 16px;
+        font-weight: bold;
+        position: relative;
+        right: 78px;
+        left: inherit;
+        bottom: inherit;
+    }
 
-  .StyleCard:hover .reveal {
-      display: flex;
-      position: absolute;
-      align-items: base;
-      transition: transform 2s ease-in-out;
-      /* Transition fluide */
-  }
+    .reveal {
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .reveal svg {
+        width: 94px;
+        height: 85px;
+        position: relative;
+        bottom: 22px;
+        right: 45px;
+    }
+
+    .StyleCard:hover .reveal {
+        display: flex;
+        position: absolute;
+        align-items: base;
+        transition: transform 2s ease-in-out;
+    }
+
     /* Bouton */
 
     .button1 {
@@ -540,6 +583,7 @@ a {
         align-items: flex-end;
         height: 136px;
         margin-top: 866px;
+        top: 75%;
     }
 
     .footer .column {

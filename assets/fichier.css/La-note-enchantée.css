@@ -197,7 +197,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     width: 91%;
-    height: 73px;
+    height: 62px;
     margin: 18px 15PX 0 15px;
 }
 
@@ -265,6 +265,35 @@ a {
     background-size: cover;
 }
 
+.price-container1,
+.price-container2,
+.price-container3,
+.price-container4,
+.price-container5,
+.price-container6,
+.price-container7,
+.price-container8,
+.price-container9,
+.price-container10 {
+    right: 35px;
+    transform: translateX(290%);
+}
+
+
+.price {
+    font-size: 13px;
+    font-weight: bold;
+    position: relative;
+    left: 174px;
+    bottom: 80%;
+}
+
+.reveal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
 /* footer */
 
 .footer {
@@ -275,7 +304,7 @@ a {
     padding-left: 20px;
     position: relative;
     height: 173px;
-    top: 47rem;
+    top: 45rem;
 }
 
 .footer__logo {
@@ -453,113 +482,115 @@ a {
     }
 
 
-    /* Animation prix  */
-
-
-    .price-container1,
-    .price-container2,
-    .price-container3,
-    .price-container4,
-    .price-container5,
-    .price-container6,
-    .price-container7,
-    .price-container8,
-    .price-container9,
-    .price-container10 {
-        position: absolute;
-        right: 35px;
-        /* Position initiale juste à l'intérieur de .StyleCard */
-        display: flex;
-        align-items: center;
-        transform: translateX(290%);
-        /* Position initiale hors du côté visible à droite */
-        transition: transform 200ms ease-in-out;
-        /* Transition fluide */
-    }
-
-    .price-container1 {
-        top: 47%;
-    }
-
-    .price-container2 {
-        top: 47%;
-    }
-
-    .price-container3 {
-        top: 47%;
-    }
-
-    .price-container4 {
-        top: 47%;
-    }
-
-    .price-container5 {
-        top: 47%;
-    }
-
-    .price-container6 {
-        top: 47%;
-    }
-
-    .price-container7 {
-        top: 47%;
-    }
-
-    .price-container8 {
-        top: 47%;
-    }
-
-    .price-container9 {
-        top: 47%;
-    }
-
-    .price-container10 {
-        top: 47%;
-    }
-
-    /* Styles de transition au survol */
-    .StyleCard:hover .price-container1,
-    .StyleCard:hover .price-container2,
-    .StyleCard:hover .price-container3,
-    .StyleCard:hover .price-container4,
-    .StyleCard:hover .price-container5,
-    .StyleCard:hover .price-container6,
-    .StyleCard:hover .price-container7,
-    .StyleCard:hover .price-container8,
-    .StyleCard:hover .price-container9,
-    .StyleCard:hover .price-container10 {
-        transform: translateX(84%);
-        /* Glissement vers la position finale visible */
-    }
-
-    /* Générale pour la transition dans les cartes */
-    .price {
-        font-size: 16px;
-        font-weight: bold;
-        position: relative;
-        right: 78px;
-    }
-
-    .reveal {
-        display: none;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .reveal svg {
-        width: 94px;
-        height: 85px;
-        position: relative;
-        bottom: 22px;
-        right: 45px;
-    }
-
-    .StyleCard:hover .reveal {
-        display: flex;
-        position: absolute;
-        align-items: base;
-        transition: transform 2s ease-in-out;
-    }
+        /* Animation prix  */
+    
+    
+        .price-container1,
+        .price-container2,
+        .price-container3,
+        .price-container4,
+        .price-container5,
+        .price-container6,
+        .price-container7,
+        .price-container8,
+        .price-container9,
+        .price-container10 {
+            position: absolute;
+            right: 35px;
+            /* Position initiale juste à l'intérieur de .StyleCard */
+            display: flex;
+            align-items: center;
+            transform: translateX(290%);
+            /* Position initiale hors du côté visible à droite */
+            transition: transform 200ms ease-in-out;
+            /* Transition fluide */
+        }
+    
+        .price-container1 {
+            top: 47%;
+        }
+    
+        .price-container2 {
+            top: 47%;
+        }
+    
+        .price-container3 {
+            top: 47%;
+        }
+    
+        .price-container4 {
+            top: 47%;
+        }
+    
+        .price-container5 {
+            top: 47%;
+        }
+    
+        .price-container6 {
+            top: 47%;
+        }
+    
+        .price-container7 {
+            top: 47%;
+        }
+    
+        .price-container8 {
+            top: 47%;
+        }
+    
+        .price-container9 {
+            top: 47%;
+        }
+    
+        .price-container10 {
+            top: 47%;
+        }
+    
+        /* Styles de transition au survol */
+        .StyleCard:hover .price-container1,
+        .StyleCard:hover .price-container2,
+        .StyleCard:hover .price-container3,
+        .StyleCard:hover .price-container4,
+        .StyleCard:hover .price-container5,
+        .StyleCard:hover .price-container6,
+        .StyleCard:hover .price-container7,
+        .StyleCard:hover .price-container8,
+        .StyleCard:hover .price-container9,
+        .StyleCard:hover .price-container10 {
+            transform: translateX(84%);
+            /* Glissement vers la position finale visible */
+        }
+    
+        /* Générale pour la transition dans les cartes */
+        .price {
+            font-size: 16px;
+            font-weight: bold;
+            position: relative;
+            right: 78px;
+            left: inherit;
+            bottom: inherit;
+        }
+    
+        .reveal {
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .reveal svg {
+            width: 94px;
+            height: 85px;
+            position: relative;
+            bottom: 22px;
+            right: 45px;
+        }
+    
+        .StyleCard:hover .reveal {
+            display: flex;
+            position: absolute;
+            align-items: base;
+            transition: transform 2s ease-in-out;
+        }
 
     /* footer */
 
