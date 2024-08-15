@@ -88,7 +88,7 @@ main {
 }
 
 h1 {
-    font-size: 23px;
+    font-size: 30px;
     font-weight: 100;
     margin: 28px 0 0px 15px;
     font-family: var(--font-logo);
@@ -108,13 +108,13 @@ h1 {
 }
 
 .plats::after {
-    content: '';
+    content: "";
     position: absolute;
-    left: 0px;
-    right: 268px;
-    top: 23px;
-    height: 4px;
-    background-color: var(--color-tertiary);
+    bottom: -5px;
+    background: #99e2d0;
+    height: 3px;
+    width: 35px;
+    left: 0%;
 }
 
 /* Bouton principal */
@@ -122,7 +122,7 @@ h1 {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 40px;
+    top: 25px;
 }
 
 /* Style du bouton */
@@ -160,7 +160,7 @@ h1 {
 /* Restaurants */
 .restaurants {
     background-color: #f6f6f6;
-    height: 1051px;
+    height: 1112px;
     width: 100%;
     position: absolute;
     border-radius: 40px 40px 0 0;
@@ -188,8 +188,12 @@ h1 {
     flex-direction: column;
     align-items: center;
     width: 91%;
-    height: 62px;
-    margin: 18px 15px 0 15px;
+    height: auto;
+    margin: 18px 0px 0 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
 }
 
 .card {
@@ -203,22 +207,37 @@ h1 {
 /* Styles pour le contenu de la carte */
 .card-content {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    align-self: stretch;
-    padding-left: 10px;
+    justify-content: space-between;
+    /* Sépare le texte et le prix */
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Styles pour les titres et sous-titres de cartes */
+.card-txt {
+    max-width: 70%;
+    /* Limite la largeur du texte pour laisser de l'espace au prix */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .card-title {
-    margin-bottom: 0.3rem;
-    font-size: 15px;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0 0 0 0;
 }
 
 .card-subtitle {
-    font-size: 11px;
-    margin: 1px 0 0px 0;
-    font-weight: 300;
+    font-size: 16px;
+    margin: 8px 1px 1px 0px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 a {
@@ -228,13 +247,12 @@ a {
 
 /* Coeurs */
 .like {
-    width: 7%;
-    height: 4rem;
+    width: 10%;
     display: flex;
     align-items: center;
     position: absolute;
-    left: 82%;
-    top: 13px;
+    left: 78%;
+    top: 39px;
     border: #2d2424;
 }
 
@@ -248,13 +266,14 @@ a {
 
 .restaurants .like label {
     display: block;
-    width: 32px;
-    height: 21.1px;
-    background-image: url('/assets/images/logo/téléchargement.png');
+    width: 25px;
+    height: 24.1px;
+    background-image: url(/assets/images/logo/téléchargement.png);
     background-size: cover;
 }
 
-/* Animation prix  */
+
+/* Animation prix */
 
 .price-container1,
 .price-container2,
@@ -266,23 +285,69 @@ a {
 .price-container8,
 .price-container9,
 .price-container10 {
-    right: 35px;
-    transform: translateX(290%);
+    position: absolute;
+    right: -11px;
+    display: flex;
+    align-items: center;
+    transition: transform 1000ms;
 }
 
+/* Styles de transition au survol */
+.StyleCard:hover .price-container1,
+.StyleCard:hover .price-container2,
+.StyleCard:hover .price-container3,
+.StyleCard:hover .price-container4,
+.StyleCard:hover .price-container5,
+.StyleCard:hover .price-container6,
+.StyleCard:hover .price-container7,
+.StyleCard:hover .price-container8,
+.StyleCard:hover .price-container9,
+.StyleCard:hover .price-container10 {
+    transform: translateX(-80);
+    /* Affiche les prix en les déplaçant à leur position finale */
+}
 
+/* Styles de transition au survol */
+.StyleCard:hover .price-container1,
+.StyleCard:hover .price-container2,
+.StyleCard:hover .price-container3,
+.StyleCard:hover .price-container4,
+.StyleCard:hover .price-container5,
+.StyleCard:hover .price-container6,
+.StyleCard:hover .price-container7,
+.StyleCard:hover .price-container8,
+.StyleCard:hover .price-container9,
+.StyleCard:hover .price-container10 {
+    transform: translateX(-221%);
+    /* Glissement vers la position finale visible */
+}
+
+/* Générale pour la transition dans les cartes */
 .price {
     font-size: 13px;
     font-weight: bold;
     position: relative;
-    left: 174px;
-    bottom: 67%;
+    right: 28px;
+    top: 16px;
 }
 
 .reveal {
     display: none;
     align-items: center;
     justify-content: center;
+}
+
+.reveal svg {
+    height: 85px;
+    position: relative;
+    bottom: 0px;
+}
+
+.StyleCard:hover .reveal {
+    display: flex;
+    position: absolute;
+    align-items: base;
+    transition: transform 2s ease-in-out;
 }
 
 /* footer */
@@ -295,7 +360,7 @@ a {
     padding-left: 20px;
     position: relative;
     height: 165px;
-    top: 39rem;
+    top: 46rem;
 }
 
 .footer__logo {
@@ -450,7 +515,7 @@ a {
 
     .card-title {
         font-size: 25px;
-        margin-bottom: 0.3rem;
+        margin: 0 0 10px 0;
     }
 
     .card-subtitle {
@@ -459,7 +524,6 @@ a {
     }
 
     /* Animation prix  */
-
 
     .price-container1,
     .price-container2,
@@ -482,45 +546,18 @@ a {
         /* Transition fluide */
     }
 
-    .price-container1 {
-        top: 47%;
-    }
-
-    .price-container2 {
-        top: 47%;
-    }
-
-    .price-container3 {
-        top: 47%;
-    }
-
-    .price-container4 {
-        top: 47%;
-    }
-
-    .price-container5 {
-        top: 47%;
-    }
-
-    .price-container6 {
-        top: 47%;
-    }
-
-    .price-container7 {
-        top: 47%;
-    }
-
-    .price-container8 {
-        top: 47%;
-    }
-
-    .price-container9 {
-        top: 47%;
-    }
-
-    .price-container10 {
-        top: 47%;
-    }
+   .price-container1,
+   .price-container2,
+   .price-container3,
+   .price-container4,
+   .price-container5,
+   .price-container6,
+   .price-container7,
+   .price-container8,
+   .price-container9,
+   .price-container10 {
+    top: 47%;
+   }
 
     /* Styles de transition au survol */
     .StyleCard:hover .price-container1,
@@ -544,7 +581,7 @@ a {
         position: relative;
         right: 78px;
         left: inherit;
-        bottom: inherit;
+        top: 6px;
     }
 
     .reveal {
