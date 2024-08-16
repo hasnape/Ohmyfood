@@ -12,10 +12,10 @@
     --grey-2: #efefef;
     --button-gradient: linear-gradient(13deg, #9356DC -12.44%, #FF79DA 115.93%);
     --carte-resto: height: 200px, width: 100%;
+
 }
 
 /* Styles globaux et éléments communs */
-
 html,
 body {
     height: 100%;
@@ -38,7 +38,6 @@ main {
 }
 
 /* Logo */
-
 .logo {
     display: flex;
     justify-content: center;
@@ -54,7 +53,6 @@ main {
 }
 
 /* Style pour l'image de la flèche de retour */
-
 .back-icon {
     width: 35px;
     height: auto;
@@ -64,7 +62,6 @@ main {
 }
 
 /* Style pour le logo principal */
-
 .main-logo {
     margin: 20px 0 20px 0;
 }
@@ -75,10 +72,8 @@ main {
     background-image: url("/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     background-size: 109%;
     background-position: center 100%;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
 }
-
-
 
 /* Titre principal */
 .title-main {
@@ -94,9 +89,9 @@ main {
 }
 
 h1 {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 100;
-    margin: 25px 0 0px 15px;
+    margin: 28px 0 0px 15px;
     font-family: var(--font-logo);
 }
 
@@ -113,25 +108,22 @@ h1 {
     position: relative;
 }
 
-
-
 .plats::after {
-    content: '';
+    content: "";
     position: absolute;
-    left: 0px;
-    right: 268px;
-    top: 23px;
-    height: 4px;
-    background-color: var(--color-tertiary);
+    bottom: -5px;
+    background: #99e2d0;
+    height: 3px;
+    width: 35px;
+    left: 0%;
 }
 
 /* Bouton principal */
-
 .button1 {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 40px;
+    top: 1152px;
 }
 
 /* Style du bouton */
@@ -169,7 +161,7 @@ h1 {
 /* Restaurants */
 .restaurants {
     background-color: #f6f6f6;
-    height: 1173px;
+    height: 1206px;
     width: 100%;
     position: absolute;
     border-radius: 40px 40px 0 0;
@@ -197,8 +189,12 @@ h1 {
     flex-direction: column;
     align-items: center;
     width: 91%;
-    height: 62px;
-    margin: 18px 15PX 0 15px;
+    height: auto;
+    margin: 18px 0px 0 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
 }
 
 .card {
@@ -212,23 +208,37 @@ h1 {
 /* Styles pour le contenu de la carte */
 .card-content {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    align-self: stretch;
-    padding-left: 20px;
+    justify-content: space-between;
+    /* Sépare le texte et le prix */
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Styles pour les titres et sous-titres de cartes */
-.card-title {
-    Margin-bottom: 0.3rem;
-    font-size: 15px;
+.card-txt {
+    max-width: 70%;
+    /* Limite la largeur du texte pour laisser de l'espace au prix */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
+.card-title {
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0 0 0 0;
 }
 
 .card-subtitle {
-    font-size: 13px;
-    margin: 1px 0 5px 0;
-    font-weight: 300;
+    font-size: 16px;
+    margin: 8px 1px 1px 0px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 a {
@@ -236,16 +246,46 @@ a {
     color: inherit;
 }
 
-/* Coeurs */
+/* apparition progressive du text */
 
+.texte-fade-in-1 {
+    opacity: 0;
+    animation: fadeIn 10s forwards;
+    /* L'animation fait apparaître le texte sur 3 secondes */
+}
+
+.texte-fade-in-2 {
+    opacity: 0;
+    animation: fadeIn 20s forwards;
+    /* L'animation fait apparaître le texte sur 3 secondes */
+}
+
+.texte-fade-in-3 {
+    opacity: 0;
+    animation: fadeIn 30s forwards;
+    /* L'animation fait apparaître le texte sur 3 secondes */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+/* Coeurs */
 .like {
-    width: 7%;
-    height: 4rem;
+    width: 10%;
     display: flex;
     align-items: center;
     position: absolute;
-    left: 82%;
-    top: 13px;
+    left: 85%;
+    top: 39px;
     border: #2d2424;
 }
 
@@ -259,11 +299,14 @@ a {
 
 .restaurants .like label {
     display: block;
-    width: 32px;
-    height: 21.1px;
-    background-image: url('/assets/images/logo/téléchargement.png');
+    width: 25px;
+    height: 24.1px;
+    background-image: url(/assets/images/logo/téléchargement.png);
     background-size: cover;
 }
+
+
+/* Animation prix */
 
 .price-container1,
 .price-container2,
@@ -275,23 +318,69 @@ a {
 .price-container8,
 .price-container9,
 .price-container10 {
-    right: 35px;
-    transform: translateX(290%);
+    position: absolute;
+    right: -11px;
+    display: flex;
+    align-items: center;
+    transition: transform 1000ms;
 }
 
+/* Styles de transition au survol */
+.StyleCard:hover .price-container1,
+.StyleCard:hover .price-container2,
+.StyleCard:hover .price-container3,
+.StyleCard:hover .price-container4,
+.StyleCard:hover .price-container5,
+.StyleCard:hover .price-container6,
+.StyleCard:hover .price-container7,
+.StyleCard:hover .price-container8,
+.StyleCard:hover .price-container9,
+.StyleCard:hover .price-container10 {
+    transform: translateX(-80);
+    /* Affiche les prix en les déplaçant à leur position finale */
+}
 
+/* Styles de transition au survol */
+.StyleCard:hover .price-container1,
+.StyleCard:hover .price-container2,
+.StyleCard:hover .price-container3,
+.StyleCard:hover .price-container4,
+.StyleCard:hover .price-container5,
+.StyleCard:hover .price-container6,
+.StyleCard:hover .price-container7,
+.StyleCard:hover .price-container8,
+.StyleCard:hover .price-container9,
+.StyleCard:hover .price-container10 {
+    transform: translateX(-221%);
+    /* Glissement vers la position finale visible */
+}
+
+/* Générale pour la transition dans les cartes */
 .price {
     font-size: 13px;
     font-weight: bold;
     position: relative;
-    left: 174px;
-    bottom: 80%;
+    right: 28px;
+    top: 16px;
 }
 
 .reveal {
     display: none;
     align-items: center;
     justify-content: center;
+}
+
+.reveal svg {
+    height: 85px;
+    position: relative;
+    bottom: 0px;
+}
+
+.StyleCard:hover .reveal {
+    display: flex;
+    position: absolute;
+    align-items: base;
+    transition: transform 2s ease-in-out;
 }
 
 /* footer */
@@ -303,8 +392,8 @@ a {
     color: #f6f6f6;
     padding-left: 20px;
     position: relative;
-    height: 173px;
-    top: 45rem;
+    height: 165px;
+    top: 52rem;
 }
 
 .footer__logo {
@@ -320,11 +409,10 @@ a {
     margin: 9px 0 0px 0px;
 }
 
+
+
 /* bureau */
-
 @media (min-width: 1024px) {
-
-
     header {
         display: flex;
         justify-items: center;
@@ -339,7 +427,7 @@ a {
     .back-icon {
         position: absolute;
         width: 2%;
-        top: 33px;
+        top: 30px;
         right: 93%;
     }
 
@@ -371,9 +459,8 @@ a {
     }
 
     /* cadre menu */
-
     .restaurants {
-        height: 1544px;
+        height: 1440px;
         top: 32rem;
         width: 70%;
         display: flex;
@@ -416,7 +503,7 @@ a {
     }
 
     .StyleCard {
-        width: 241%;
+        width: 240%;
         height: 84px;
         display: flex;
         align-content: flex-start;
@@ -427,16 +514,13 @@ a {
         position: relative;
     }
 
-
     /* Style spécifique pour les icônes de coeur */
-
     .restaurants .like {
-        Width: 6%;
+        width: 6%;
         height: 5%;
         left: 67%;
         bottom: 0%;
-        top: 65px;
-
+        top: 4.8%;
     }
 
     .restaurants .like input[type="checkbox"] {
@@ -455,7 +539,6 @@ a {
         background-size: cover;
     }
 
-
     /* Ajustement de la carte et de l'image */
     .card {
         width: 100%;
@@ -464,152 +547,120 @@ a {
     }
 
     .card-title {
-        font-size: 22px;
-        margin-bottom: 0.3rem;
+        font-size: 25px;
+        margin: 0 0 10px 0;
     }
 
     .card-subtitle {
-        font-size: 18px;
-        margin: 1px 0 15px 0;
+        font-size: 19px;
         font-weight: 300;
     }
 
+    /* Animation prix  */
+
+    .price-container1,
+    .price-container2,
+    .price-container3,
+    .price-container4,
+    .price-container5,
+    .price-container6,
+    .price-container7,
+    .price-container8,
+    .price-container9,
+    .price-container10 {
+        position: absolute;
+        right: 35px;
+        /* Position initiale juste à l'intérieur de .StyleCard */
+        display: flex;
+        align-items: center;
+        transform: translateX(290%);
+        /* Position initiale hors du côté visible à droite */
+        transition: transform 200ms ease-in-out;
+        /* Transition fluide */
+    }
+
+    .price-container1,
+    .price-container2,
+    .price-container3,
+    .price-container4,
+    .price-container5,
+    .price-container6,
+    .price-container7,
+    .price-container8,
+    .price-container9,
+    .price-container10 {
+        top: 47%;
+    }
+
+    /* Styles de transition au survol */
+    .StyleCard:hover .price-container1,
+    .StyleCard:hover .price-container2,
+    .StyleCard:hover .price-container3,
+    .StyleCard:hover .price-container4,
+    .StyleCard:hover .price-container5,
+    .StyleCard:hover .price-container6,
+    .StyleCard:hover .price-container7,
+    .StyleCard:hover .price-container8,
+    .StyleCard:hover .price-container9,
+    .StyleCard:hover .price-container10 {
+        transform: translateX(84%);
+        /* Glissement vers la position finale visible */
+    }
+
+    /* Générale pour la transition dans les cartes */
+    .price {
+        font-size: 16px;
+        font-weight: bold;
+        position: relative;
+        right: 78px;
+        left: inherit;
+        top: 6px;
+    }
+
+    .reveal {
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .reveal svg {
+        width: 94px;
+        height: 85px;
+        position: relative;
+        bottom: 22px;
+        right: 45px;
+    }
+
+    .StyleCard:hover .reveal {
+        display: flex;
+        position: absolute;
+        align-items: base;
+        transition: transform 2s ease-in-out;
+    }
+
+    /* Bouton */
 
     .button1 {
         position: relative;
         top: 35px;
-        left: 330px;
+        left: 295px;
     }
 
-
-        /* Animation prix  */
-    
-    
-        .price-container1,
-        .price-container2,
-        .price-container3,
-        .price-container4,
-        .price-container5,
-        .price-container6,
-        .price-container7,
-        .price-container8,
-        .price-container9,
-        .price-container10 {
-            position: absolute;
-            right: 35px;
-            /* Position initiale juste à l'intérieur de .StyleCard */
-            display: flex;
-            align-items: center;
-            transform: translateX(290%);
-            /* Position initiale hors du côté visible à droite */
-            transition: transform 200ms ease-in-out;
-            /* Transition fluide */
-        }
-    
-        .price-container1 {
-            top: 47%;
-        }
-    
-        .price-container2 {
-            top: 47%;
-        }
-    
-        .price-container3 {
-            top: 47%;
-        }
-    
-        .price-container4 {
-            top: 47%;
-        }
-    
-        .price-container5 {
-            top: 47%;
-        }
-    
-        .price-container6 {
-            top: 47%;
-        }
-    
-        .price-container7 {
-            top: 47%;
-        }
-    
-        .price-container8 {
-            top: 47%;
-        }
-    
-        .price-container9 {
-            top: 47%;
-        }
-    
-        .price-container10 {
-            top: 47%;
-        }
-    
-        /* Styles de transition au survol */
-        .StyleCard:hover .price-container1,
-        .StyleCard:hover .price-container2,
-        .StyleCard:hover .price-container3,
-        .StyleCard:hover .price-container4,
-        .StyleCard:hover .price-container5,
-        .StyleCard:hover .price-container6,
-        .StyleCard:hover .price-container7,
-        .StyleCard:hover .price-container8,
-        .StyleCard:hover .price-container9,
-        .StyleCard:hover .price-container10 {
-            transform: translateX(84%);
-            /* Glissement vers la position finale visible */
-        }
-    
-        /* Générale pour la transition dans les cartes */
-        .price {
-            font-size: 16px;
-            font-weight: bold;
-            position: relative;
-            right: 78px;
-            left: inherit;
-            bottom: inherit;
-        }
-    
-        .reveal {
-            display: none;
-            align-items: center;
-            justify-content: center;
-        }
-    
-        .reveal svg {
-            width: 94px;
-            height: 85px;
-            position: relative;
-            bottom: 22px;
-            right: 45px;
-        }
-    
-        .StyleCard:hover .reveal {
-            display: flex;
-            position: absolute;
-            align-items: base;
-            transition: transform 2s ease-in-out;
-        }
-
     /* footer */
-
     .footer {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
         height: 136px;
-        margin-top: 965px;
+        margin-top: 866px;
+        top: 75%;
     }
 
     .footer .column {
         display: flex;
         align-items: center;
         gap: 13px;
-        /* Espacement entre les éléments */
         margin: 0px 301px 35px 0px;
-
-
     }
 
     .footer__logo {
@@ -636,6 +687,5 @@ a {
         flex-direction: row;
         align-items: center;
         gap: 26px;
-
     }
 }
