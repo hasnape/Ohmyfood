@@ -251,19 +251,16 @@ a {
 .texte-fade-in-1 {
     opacity: 0;
     animation: fadeIn 10s forwards;
-    /* L'animation fait apparaître le texte sur 3 secondes */
 }
 
 .texte-fade-in-2 {
     opacity: 0;
     animation: fadeIn 20s forwards;
-    /* L'animation fait apparaître le texte sur 3 secondes */
 }
 
 .texte-fade-in-3 {
     opacity: 0;
     animation: fadeIn 30s forwards;
-    /* L'animation fait apparaître le texte sur 3 secondes */
 }
 
 @keyframes fadeIn {
@@ -460,7 +457,7 @@ a {
 
     /* cadre menu */
     .restaurants {
-        height: 1440px;
+        height: 1560px;
         top: 32rem;
         width: 70%;
         display: flex;
@@ -520,7 +517,7 @@ a {
         height: 5%;
         left: 67%;
         bottom: 0%;
-        top: 4.8%;
+        top: 4.4%;
     }
 
     .restaurants .like input[type="checkbox"] {
@@ -642,9 +639,8 @@ a {
 
     .button1 {
         position: relative;
-        top: 35px;
-        left: 295px;
-    }
+        top: 1645px;   
+     }
 
     /* footer */
     .footer {
@@ -653,7 +649,7 @@ a {
         align-items: flex-end;
         height: 136px;
         margin-top: 866px;
-        top: 75%;
+        top: 81%;
     }
 
     .footer .column {

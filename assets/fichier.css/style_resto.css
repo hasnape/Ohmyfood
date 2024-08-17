@@ -251,7 +251,7 @@ a {
     display: flex;
     align-items: center;
     position: absolute;
-    left: 78%;
+    left: 84%;
     top: 39px;
     border: #2d2424;
 }
@@ -348,6 +348,32 @@ a {
     position: absolute;
     align-items: base;
     transition: transform 2s ease-in-out;
+}
+
+.texte-fade-in-1 {
+    opacity: 0;
+    animation: fadeIn 10s forwards;
+}
+
+.texte-fade-in-2 {
+    opacity: 0;
+    animation: fadeIn 20s forwards;
+}
+
+.texte-fade-in-3 {
+    opacity: 0;
+    animation: fadeIn 30s forwards;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* footer */
@@ -487,7 +513,7 @@ a {
         height: 5%;
         left: 67%;
         bottom: 0%;
-        top: 4.8%;
+        top: 5%;
     }
 
     .restaurants .like input[type="checkbox"] {
@@ -536,13 +562,13 @@ a {
     .price-container9,
     .price-container10 {
         position: absolute;
-        right: 35px;
+        right: 34px;
         /* Position initiale juste à l'intérieur de .StyleCard */
         display: flex;
         align-items: center;
         transform: translateX(290%);
         /* Position initiale hors du côté visible à droite */
-        transition: transform 200ms ease-in-out;
+        transition: transform 1000ms ease-in-out;
         /* Transition fluide */
     }
 
