@@ -74,6 +74,12 @@ main {
     background-repeat: no-repeat;
 }
 
+.titre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Titre principal */
 .title-main {
     display: flex;
@@ -88,16 +94,16 @@ main {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 100;
-    margin: 28px 0 0px 15px;
+    margin: 35px 0 0 0;
     font-family: var(--font-logo);
 }
 
 .title-main h2 {
     font-size: 16px;
     font-weight: 300;
-    margin: 10px 0px 25px 0px;
+    margin: 10px 0px 25px;
     padding: 0px 20px;
 }
 
@@ -386,7 +392,7 @@ a {
     padding-left: 20px;
     position: relative;
     height: 165px;
-    top: 46rem;
+    top: 460%;
 }
 
 .footer__logo {
@@ -438,6 +444,7 @@ a {
     h1 {
         font-size: 40px;
         font-family: var(--font-logo);
+        margin: unset;
     }
 
     .title-main h2 {
@@ -455,13 +462,13 @@ a {
     .restaurants {
         height: 1440px;
         top: 32rem;
-        width: 70%;
+        width: 90%;
         display: flex;
         border-radius: 30px 30px 0 0;
         flex-direction: column;
         align-items: flex-start;
         position: absolute;
-        margin: 0 0 0 300px;
+        margin: 0 0 0 60px;
     }
 
     .titre {
@@ -474,7 +481,7 @@ a {
     }
 
     .menu {
-        margin: 0px 0PX 0px 165px
+        margin: 0px 0px 0px 50px
     }
 
     .plats {
@@ -496,7 +503,7 @@ a {
     }
 
     .StyleCard {
-        width: 240%;
+        width: 203%;
         height: 84px;
         display: flex;
         align-content: flex-start;
@@ -511,9 +518,8 @@ a {
     .restaurants .like {
         width: 6%;
         height: 5%;
-        left: 67%;
-        bottom: 0%;
-        top: 5%;
+        margin: 0 0 0 6%;
+        position: inherit;
     }
 
     .restaurants .like input[type="checkbox"] {
