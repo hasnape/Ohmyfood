@@ -320,7 +320,7 @@ main {
     width: 100%;
     height: 158px;
     border-radius: 1.25rem 1.25rem 0 0;
-    background-image: url("assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-image: url("../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     background-size: 104%;
     background-position: center 100%;
     background-repeat: no-repeat
@@ -331,7 +331,7 @@ main {
     width: 100%;
     height: 200px;
     border-radius: 1.25rem 1.25rem 0 0;
-    background-image: url("/assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    background-image: url("../assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
     background-size: 105%;
     background-position: center 61%;
     background-repeat: no-repeat
@@ -341,7 +341,7 @@ main {
     width: 100%;
     height: 200px;
     border-radius: 1.25rem 1.25rem 0 0;
-    background-image: url("assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-image: url("../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
     background-size: 101%;
     background-position: center 104%;
     background-repeat: no-repeat;
@@ -352,7 +352,7 @@ main {
     width: 100%;
     height: 200px;
     border-radius: 1.25rem 1.25rem 0 0;
-    background-image: url("assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+    background-image: url("../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
         );
     background-size: 101%;
     background-position: center 104%;
@@ -420,14 +420,14 @@ a {
 }
 
 .restaurants .like input[type="checkbox"]:checked+label {
-    background-image: url('/assets/images/logo/Like.svg');
+    background-image: url('../assets/images/logo/Like.svg');
 }
 
 .restaurants .like label {
     display: block;
     width: 29px;
     height: 27.1px;
-    background-image: url('/assets/images/logo/téléchargement.png');
+    background-image: url('../assets/images/logo/téléchargement.png');
     background-size: cover;
     position: absolute;
     bottom: 99px;
