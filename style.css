@@ -420,14 +420,14 @@ a {
 }
 
 .restaurants .like input[type="checkbox"]:checked+label {
-    background-image: url('../assets/images/logo/Like.svg');
+    background-image: url('./assets/images/logo/Like.svg');
 }
 
 .restaurants .like label {
     display: block;
     width: 29px;
     height: 27.1px;
-    background-image: url('../assets/images/logo/téléchargement.png');
+    background-image: url('./assets/images/logo/téléchargement.png');
     background-size: cover;
     position: absolute;
     bottom: 99px;
