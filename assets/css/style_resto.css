@@ -69,7 +69,7 @@ main {
 .image1 {
     width: 100%;
     height: 233px;
-    background-image: url("assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-image: url("/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     background-size: 109%;
     background-position: center 100%;
     background-repeat: no-repeat;
