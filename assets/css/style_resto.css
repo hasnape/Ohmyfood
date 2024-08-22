@@ -45,8 +45,8 @@ main {
 .logo a {
     text-decoration: none;
     color: inherit;
-    width: 42%;
-    height: 42%;
+    width: 40%;
+    height: 40%;
     display: flex;
     justify-content: center;
 }
@@ -62,7 +62,7 @@ main {
 
 /* Style pour le logo principal */
 .main-logo {
-    margin: 20px 0 20px 0;
+    margin: 15px 0 10px 0;
 }
 
 .image1 {
@@ -74,7 +74,7 @@ main {
     background-repeat: no-repeat;
 }
 
-.titre{
+.titre {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,9 +94,9 @@ main {
 }
 
 h1 {
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 100;
-    margin: 35px 0 0 0;
+    margin: 28px 25px 0 0px;
     font-family: var(--font-logo);
 }
 
@@ -128,7 +128,7 @@ h1 {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 25px;
+    top: 40px;
 }
 
 /* Style du bouton */
@@ -166,7 +166,7 @@ h1 {
 /* Restaurants */
 .restaurants {
     background-color: #f6f6f6;
-    height: 1112px;
+    height: 1135px;
     width: 100%;
     position: absolute;
     border-radius: 40px 40px 0 0;
@@ -193,7 +193,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 91%;
+    width: 92%;
     height: auto;
     margin: 18px 0px 0 15px;
     padding: 10px;
@@ -253,13 +253,9 @@ a {
 
 /* Coeurs */
 .like {
-    width: 10%;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: 84%;
-    top: 39px;
+    margin: 25px 0 0 0;
     border: #2d2424;
+    display: block;
 }
 
 .restaurants .like input[type="checkbox"] {
@@ -267,15 +263,15 @@ a {
 }
 
 .restaurants .like input[type="checkbox"]:checked+label {
-    background-image: url('../assets/images/logo/Like.svg');
+    background-image: url('/assets/images/logo/Like.svg');
 }
 
 .restaurants .like label {
     display: block;
-    width: 25px;
-    height: 24.1px;
-    background-image: url(../assets/images/logo/téléchargement.png);
-    background-size: cover;
+    width: 20px;
+    height: 19px;
+    background-image: url('/assets/images/logo/téléchargement.png');
+    background-size: cover
 }
 
 
@@ -391,12 +387,12 @@ a {
     color: #f6f6f6;
     padding-left: 20px;
     position: relative;
-    height: 165px;
-    top: 460%;
+    height: 160px;
+    top: 481%
 }
 
 .footer__logo {
-    margin-top: 20px;
+    margin: 24px 0 6px 0;
 }
 
 .footer__svg {
@@ -404,8 +400,8 @@ a {
 }
 
 .footer p {
-    font-size: 16px;
-    margin: 9px 0 0px 0px;
+    font-size: 13px;
+    margin: 6px 0 0px 0px;
 }
 
 
@@ -460,19 +456,19 @@ a {
 
     /* cadre menu */
     .restaurants {
-        height: 1440px;
+        height: 1469px;
         top: 32rem;
-        width: 90%;
+        width: 71%;
         display: flex;
         border-radius: 30px 30px 0 0;
         flex-direction: column;
-        align-items: flex-start;
-        position: absolute;
-        margin: 0 0 0 60px;
+        margin: 0px 0px 0 280px;
+        align-content: center;
+        flex-wrap: wrap;
     }
 
     .titre {
-        margin: 51px 0PX 0px 0px;
+        margin: 32px 0 0 0;
         width: 100%;
         justify-content: center;
         align-items: center;
@@ -480,15 +476,14 @@ a {
         font-weight: 100;
     }
 
-                .menu {
-                    display: flex;
-                    flex-direction: column;
-                    align-content: center;
-                    align-items: center;
-                }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 130px 0 140px;
+    }
 
     .plats {
-        margin: 55px 29px 23px;
+        margin: 30px 29px 23px;
         font-weight: 300;
         position: relative;
         display: block;
@@ -506,23 +501,20 @@ a {
     }
 
     .StyleCard {
-        width: 203%;
+        width: 96%;
         height: 84px;
-        display: flex;
         align-content: flex-start;
         border-radius: 1.25rem;
         background: #FFF;
         overflow: hidden;
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-        position: relative;
     }
 
     /* Style spécifique pour les icônes de coeur */
     .restaurants .like {
-        width: 6%;
-        height: 5%;
-        margin: 0 0 0 6%;
-        position: inherit;
+                width: 6%;
+                    height: 5%;
+                    margin: 0 0 25px 6%;
     }
 
     .restaurants .like input[type="checkbox"] {
@@ -530,14 +522,14 @@ a {
     }
 
     .restaurants .like input[type="checkbox"]:checked+label {
-        background-image: url('../assets/images/logo/Like.svg');
+        background-image: url('/assets/images/logo/Like.svg');
     }
 
     .restaurants .like label {
         display: block;
         width: 34px;
         height: 32.1px;
-        background-image: url('../assets/images/logo/téléchargement.png');
+        background-image: url('/assets/images/logo/téléchargement.png');
         background-size: cover;
     }
 
@@ -581,18 +573,18 @@ a {
         /* Transition fluide */
     }
 
-   .price-container1,
-   .price-container2,
-   .price-container3,
-   .price-container4,
-   .price-container5,
-   .price-container6,
-   .price-container7,
-   .price-container8,
-   .price-container9,
-   .price-container10 {
-    top: 47%;
-   }
+    .price-container1,
+    .price-container2,
+    .price-container3,
+    .price-container4,
+    .price-container5,
+    .price-container6,
+    .price-container7,
+    .price-container8,
+    .price-container9,
+    .price-container10 {
+        top: 47%;
+    }
 
     /* Styles de transition au survol */
     .StyleCard:hover .price-container1,
@@ -644,8 +636,8 @@ a {
 
     .button1 {
         position: relative;
-        top: 35px;
-        left: 295px;
+        top: 29px;
+        left: 18px;
     }
 
     /* footer */
@@ -654,7 +646,7 @@ a {
         justify-content: flex-end;
         align-items: flex-end;
         height: 136px;
-        margin-top: 866px;
+        margin-top: 880px;
         top: 75%;
     }
 
