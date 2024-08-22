@@ -64,8 +64,8 @@ main {
 .main-logo {
     margin: 15px 0 10px 0;
 }
-
-.image1 /*La pallete*/ {
+/*La pallete*/
+.image1 {
     width: 100%;
     height: 233px;
     background-image: url("/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
@@ -73,8 +73,8 @@ main {
     background-position: center 100%;
     background-repeat: no-repeat;
 }
-
-.image2 /*A la francaise*/{
+/*A la francaise*/
+.image2 {
     width: 100%;
     height: 233px;
     background-image: url("assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
@@ -82,8 +82,8 @@ main {
     background-position: center 100%;
     background-repeat: no-repeat;
 }
-
-.image3 /*Delice*/ {
+ /*Delice*/ 
+.image3 {
     width: 100%;
     height: 233px;
     background-image: url("../assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
