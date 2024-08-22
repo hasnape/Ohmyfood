@@ -65,42 +65,42 @@ main {
     margin: 15px 0 10px 0;
 }
 
-
 .image1 {
     width: 100%;
-    height: 233px;
-    background-image: url("./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    height: 440px;
+    background-image: url("/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     background-size: 109%;
     background-position: center 100%;
     background-repeat: no-repeat;
 }
 
-
-/* .francaise {
+.image2 {
     width: 100%;
-    height: 233px;
-    background-size: 109%;
-    background-position: center 100%;
-    background-repeat: no-repeat; */
+    height: 440px;
+    background-size: 100%;
+    background-position: center 56%;
+    background-repeat: no-repeat;
+    background-image: url("/assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
 
- /*Delice*/ 
-/* .image3 {
+.image3 {
     width: 100%;
-    height: 233px;
-    background-image: url("../assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-    background-size: 109%;
-    background-position: center 100%;
+    height: 440px;
+    background-image: url("/assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-size: 100%;
+    background-position: center 61%;
     background-repeat: no-repeat;
-} */
 
-/* .image4 Note enchantee { */
-    /* width: 100%;
-    height: 233px;
-    background-image: url("./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-    background-size: 109%;
-    background-position: center 100%;
+}
+
+.image4 {
+    width: 100%;
+    height: 440px;
+    background-image: url("/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+    background-size: 100%;
+    background-position: center 73%;
     background-repeat: no-repeat;
-} */
+}
 
 .titre {
     display: flex;
@@ -155,8 +155,7 @@ h1 {
 .button1 {
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 40px;
+    margin-top: 30px;
 }
 
 /* Style du bouton */
@@ -484,13 +483,12 @@ a {
 
     /* cadre menu */
     .restaurants {
-        height: 1469px;
-        top: 32rem;
-        width: 71%;
+        height: 157%;
+        width: 72%;
         display: flex;
         border-radius: 30px 30px 0 0;
         flex-direction: column;
-        margin: 0px 0px 0 280px;
+        margin: 147px 0px 0 280px;
         align-content: center;
         flex-wrap: wrap;
     }
@@ -540,9 +538,9 @@ a {
 
     /* Style spécifique pour les icônes de coeur */
     .restaurants .like {
-                width: 6%;
-                    height: 5%;
-                    margin: 0 0 25px 6%;
+        width: 6%;
+        height: 5%;
+        margin: 0 0 25px 6%;
     }
 
     .restaurants .like input[type="checkbox"] {
@@ -663,9 +661,9 @@ a {
     /* Bouton */
 
     .button1 {
-        position: relative;
-        top: 29px;
-        left: 18px;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
     }
 
     /* footer */
@@ -675,7 +673,7 @@ a {
         align-items: flex-end;
         height: 136px;
         margin-top: 880px;
-        top: 75%;
+        top: 57%;
     }
 
     .footer .column {
