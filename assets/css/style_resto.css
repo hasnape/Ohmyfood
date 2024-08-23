@@ -17,17 +17,17 @@
 /* Styles globaux et éléments communs */
 html,
 body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: var(--font-text);
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    margin: unset;
+        padding: unset;
+        font-family: var(--font-text);
+        display: flex;
+        flex-direction: column;
+        height: 235%;
 }
 
 main {
     flex: 1;
+    
 }
 
 /* Ground top */
@@ -80,13 +80,13 @@ main {
     background-size: 100%;
     background-position: center 56%;
     background-repeat: no-repeat;
-    background-image: url("/assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    background-image: url("./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
 
 .image3 {
     width: 100%;
     height: 440px;
-    background-image: url("/assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-image: url("../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
     background-size: 100%;
     background-position: center 61%;
     background-repeat: no-repeat;
@@ -95,11 +95,11 @@ main {
 
 .image4 {
     width: 100%;
-    height: 440px;
-    background-image: url("/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-    background-size: 100%;
-    background-position: center 73%;
-    background-repeat: no-repeat;
+        height: 440px;
+        background-image: url("/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+        background-size: 100%;
+        background-position: center 73%;
+        background-repeat: no-repeat;
 }
 
 .titre {
@@ -154,8 +154,8 @@ h1 {
 /* Bouton principal */
 .button1 {
     display: flex;
-    justify-content: center;
-    margin-top: 30px;
+        justify-content: center;
+        margin-top: 30px;
 }
 
 /* Style du bouton */
@@ -190,8 +190,8 @@ h1 {
     width: 100%;
 }
 
-/* Restaurants */
-.restaurants {
+/*  */
+.restaurants{
     background-color: #f6f6f6;
     height: 1135px;
     width: 100%;
@@ -413,9 +413,7 @@ a {
     background-color: #353535;
     color: #f6f6f6;
     padding-left: 20px;
-    position: relative;
     height: 160px;
-    top: 481%
 }
 
 .footer__logo {
@@ -483,12 +481,13 @@ a {
 
     /* cadre menu */
     .restaurants {
-        height: 157%;
-        width: 72%;
+        height: 1469px;
+        top: 50%;
+        width: 71%;
         display: flex;
         border-radius: 30px 30px 0 0;
         flex-direction: column;
-        margin: 147px 0px 0 280px;
+        margin: 0px 0px 0 280px;
         align-content: center;
         flex-wrap: wrap;
     }
@@ -662,8 +661,8 @@ a {
 
     .button1 {
         display: flex;
-        justify-content: center;
-        margin-top: 30px;
+            justify-content: center;
+            margin-top: 30px;
     }
 
     /* footer */
@@ -672,8 +671,7 @@ a {
         justify-content: flex-end;
         align-items: flex-end;
         height: 136px;
-        margin-top: 880px;
-        top: 57%;
+        margin: auto;
     }
 
     .footer .column {
@@ -697,9 +695,10 @@ a {
     .footer p {
         display: flex;
         align-items: center;
-        margin: 0;
         font-size: 18px;
+    margin: unset;
     }
+
 
     .footer .soloP {
         margin-left: 69px;
