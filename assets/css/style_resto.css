@@ -18,16 +18,16 @@
 html,
 body {
     margin: unset;
-        padding: unset;
-        font-family: var(--font-text);
-        display: flex;
-        flex-direction: column;
-        height: 235%;
+    padding: unset;
+    font-family: var(--font-text);
+    display: flex;
+    flex-direction: column;
+    height: 235%;
 }
 
 main {
     flex: 1;
-    
+
 }
 
 /* Ground top */
@@ -68,22 +68,25 @@ main {
 img {
     object-fit: cover;
 }
-.main-container .main-container-1__img img, 
+
+.main-container .main-container-1__img img,
 .main-container .main-container-2__img img,
-.main-container .main-container-3__img img
- {
+.main-container .main-container-3__img img,
+.image-4__img, .image-3__img {
     width: 100%;
     height: 440px;
+    background-size: 100%;
 }
 
+.image-3__img {
+    background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-position:center 63%; 
+}
+
+
 .image-4__img {
-    width: 100%;
-        height: 440px;
-        background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-        background-size: 100%;
-        background-position: center 73%;
-        background-repeat: no-repeat;
-            object-fit: cover;
+    background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+    background-position: center 73%;
 }
 
 .titre {
@@ -138,8 +141,8 @@ h1 {
 /* Bouton principal */
 .button1 {
     display: flex;
-        justify-content: center;
-        margin-top: 30px;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 /* Style du bouton */
@@ -175,7 +178,7 @@ h1 {
 }
 
 /*  */
-.restaurants{
+.restaurants {
     background-color: #f6f6f6;
     height: 1135px;
     width: 100%;
@@ -435,7 +438,7 @@ a {
         right: 93%;
     }
 
-        .main-container {
+    .main-container {
         margin: inherit;
         height: 235px;
     }
@@ -645,8 +648,8 @@ a {
 
     .button1 {
         display: flex;
-            justify-content: center;
-            margin-top: 30px;
+        justify-content: center;
+        margin-top: 30px;
     }
 
     /* footer */
@@ -680,7 +683,7 @@ a {
         display: flex;
         align-items: center;
         font-size: 18px;
-    margin: unset;
+        margin: unset;
     }
 
 
