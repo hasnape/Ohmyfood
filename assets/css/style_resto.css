@@ -22,7 +22,7 @@ body {
     font-family: var(--font-text);
     display: flex;
     flex-direction: column;
-    height: 235%;
+    height: 234%;
 }
 
 main {
