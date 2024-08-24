@@ -539,7 +539,7 @@ a {
     .restaurants .like {
         width: 6%;
         height: 5%;
-        margin: 0 0 9px 6%;
+        margin: 0 0 2% 6%;
     }
 
     .restaurants .like input[type="checkbox"] {
