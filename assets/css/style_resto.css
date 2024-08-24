@@ -281,14 +281,14 @@ a {
 }
 
 .restaurants .like input[type="checkbox"]:checked+label {
-    background-image: url('../assets/images/logo/Like.svg');
+    background-image: url('../images/logo/Like.svg');
 }
 
 .restaurants .like label {
     display: block;
     width: 20px;
     height: 19px;
-    background-image: url('../assets/images/logo/téléchargement.png');
+    background-image: url('../images/logo/téléchargement.png');
     background-size: cover
 }
 
@@ -431,6 +431,10 @@ a {
         justify-content: center;
     }
 
+    main {
+        height: 100%;
+    }
+
     html,body{
         height: 226%;
     }
@@ -477,7 +481,7 @@ a {
 
     /* cadre menu */
     .restaurants {
-        height: auto;
+        height: 161%;
         top: 50%;
         width: 71%;
         display: flex;
@@ -535,7 +539,7 @@ a {
     .restaurants .like {
         width: 6%;
         height: 5%;
-        margin: 0 0 25px 6%;
+        margin: 0 0 9px 6%;
     }
 
     .restaurants .like input[type="checkbox"] {
@@ -543,14 +547,14 @@ a {
     }
 
     .restaurants .like input[type="checkbox"]:checked+label {
-        background-image: url('/assets/images/logo/Like.svg');
+        background-image: url('../images/logo/Like.svg');
     }
 
     .restaurants .like label {
         display: block;
         width: 34px;
         height: 32.1px;
-        background-image: url('/assets/images/logo/téléchargement.png');
+        background-image: url('../images/logo/téléchargement.png');
         background-size: cover;
     }
 
