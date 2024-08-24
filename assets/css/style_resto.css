@@ -22,7 +22,7 @@ body {
     font-family: var(--font-text);
     display: flex;
     flex-direction: column;
-    height: 234%;
+    height: 202%;
 }
 
 main {
@@ -70,12 +70,15 @@ img {
 }
 
 .main-container .main-container-1__img img,
-.main-container .main-container-2__img img,
-.main-container .main-container-3__img img,
+.image-2__img,
 .image-4__img, .image-3__img {
     width: 100%;
     height: 440px;
     background-size: 100%;
+}
+
+.image-2__img {
+    background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
 .image-3__img {
@@ -180,7 +183,7 @@ h1 {
 /*  */
 .restaurants {
     background-color: #f6f6f6;
-    height: 1135px;
+    height: 150%;
     width: 100%;
     position: absolute;
     border-radius: 40px 40px 0 0;
@@ -468,7 +471,7 @@ a {
 
     /* cadre menu */
     .restaurants {
-        height: 1469px;
+        height: 1550px;
         top: 50%;
         width: 71%;
         display: flex;
