@@ -71,10 +71,12 @@ img {
 
 .main-container .main-container-1__img img,
 .image-2__img,
-.image-4__img, .image-3__img {
+.image-4__img, 
+.image-3__img {
     width: 100%;
-    height: 440px;
+    height: 233px;
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .image-2__img {
@@ -478,6 +480,13 @@ a {
         border-radius: 30px;
         font-size: 20px;
     }
+
+        .main-container .main-container-1__img img,
+        .image-2__img,
+        .image-4__img,
+        .image-3__img {
+            height: 440px;
+        }
 
     /* cadre menu */
     .restaurants {
