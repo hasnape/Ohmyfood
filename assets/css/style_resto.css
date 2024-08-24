@@ -423,11 +423,16 @@ a {
 
 
 /* bureau */
+
 @media (min-width: 1024px) {
     header {
         display: flex;
         justify-items: center;
         justify-content: center;
+    }
+
+    html,body{
+        height: 226%;
     }
 
     .logo img {
@@ -472,7 +477,7 @@ a {
 
     /* cadre menu */
     .restaurants {
-        height: 1550px;
+        height: auto;
         top: 50%;
         width: 71%;
         display: flex;
@@ -653,7 +658,7 @@ a {
     .button1 {
         display: flex;
         justify-content: center;
-        margin-top: 30px;
+        margin: 30px;
     }
 
     /* footer */
